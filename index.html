@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drills & Skills — Kalama Soccer Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --orange: #F26522;
+    --orange-dark: #C4501A;
+    --orange-light: #FF8C42;
+    --black: #1A1A1A;
+    --card-bg: #F7F7F7;
+    --card-border: #E8E8E8;
+    --text: #333333;
+    --muted: #666666;
+    --white: #ffffff;
+    /* tag colors */
+    --tag-age:      #F26522; --tag-age-bg:      #fff3ee;
+    --tag-skill:    #2563eb; --tag-skill-bg:    #eff6ff;
+    --tag-position: #7c3aed; --tag-position-bg: #f5f3ff;
+    --tag-level:    #16a34a; --tag-level-bg:    #f0fdf4;
+    --tag-type:     #db2777; --tag-type-bg:     #fdf2f8;
+    --tag-size:     #0891b2; --tag-size-bg:     #ecfeff;
+    --tag-equip:    #65a30d; --tag-equip-bg:    #f7fee7;
+    --tag-energy:   #ca8a04; --tag-energy-bg:   #fefce8;
+    --tag-fun:      #6b7280; --tag-fun-bg:      #f9fafb;
+  }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: #f4f4f4;
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    background: linear-gradient(135deg, #1A1A1A 0%, #3a1e00 55%, #1A1A1A 100%);
+    padding: 28px 24px 22px;
+    text-align: center;
+  }
+  .header-eyebrow {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: var(--orange);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .header h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2rem, 6vw, 3.2rem);
+    color: var(--white);
+    line-height: 1;
+    letter-spacing: 1px;
+  }
+  .header h1 span { color: var(--orange); }
+  .header-sub {
+    font-size: 14px;
+    color: rgba(255,255,255,0.6);
+    margin-top: 8px;
+  }
+
+  /* ── STATS BAR ── */
+  .stats-bar {
+    background: var(--black);
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+  .stat {
+    padding: 10px 24px;
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.1);
+  }
+  .stat:last-child { border-right: none; }
+  .stat-num {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+    color: var(--orange);
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* ── FILTERS ── */
+  .filters-wrap {
+    background: var(--white);
+    border-bottom: 3px solid var(--orange);
+    padding: 16px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  }
+  .search-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+    align-items: center;
+  }
+  .search-box {
+    flex: 1;
+    padding: 10px 16px;
+    border: 2px solid var(--card-border);
+    border-radius: 8px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .search-box:focus { border-color: var(--orange); }
+  .clear-btn {
+    padding: 10px 16px;
+    background: var(--card-bg);
+    border: 2px solid var(--card-border);
+    border-radius: 8px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--muted);
+    white-space: nowrap;
+    transition: all 0.2s;
+  }
+  .clear-btn:hover { border-color: var(--orange); color: var(--orange); }
+
+  .filter-rows {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 8px;
+  }
+  .filter-select {
+    padding: 8px 12px;
+    border: 2px solid var(--card-border);
+    border-radius: 8px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    background: var(--white);
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.2s;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23999' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 32px;
+  }
+  .filter-select:focus { border-color: var(--orange); }
+  .filter-select.active { border-color: var(--orange); background-color: #fff8f5; color: var(--orange-dark); }
+
+  .results-line {
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .results-line span { color: var(--orange); font-weight: 700; }
+
+  /* ── GRID ── */
+  .grid-wrap {
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .drill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+  }
+
+  /* ── DRILL CARD ── */
+  .drill-card {
+    background: var(--white);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.15s, box-shadow 0.15s;
+    cursor: pointer;
+  }
+  .drill-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(242,101,34,0.15);
+    border-color: var(--orange);
+  }
+  .drill-card.hidden { display: none; }
+  .drill-card.expanded .card-body { display: block; }
+
+  .card-top {
+    display: flex;
+    align-items: stretch;
+    min-height: 80px;
+  }
+  .card-diagram {
+    width: 80px;
+    min-width: 80px;
+    background: linear-gradient(135deg, #1A1A1A, #3a1e00);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    flex-shrink: 0;
+  }
+  .card-diagram img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card-header {
+    flex: 1;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+  }
+  .card-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--black);
+    line-height: 1.2;
+  }
+  .card-meta {
+    font-size: 11px;
+    color: var(--muted);
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .card-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  .expand-icon {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    color: var(--muted);
+    font-size: 18px;
+    transition: transform 0.2s, color 0.2s;
+    flex-shrink: 0;
+    align-self: center;
+  }
+  .drill-card.expanded .expand-icon {
+    transform: rotate(180deg);
+    color: var(--orange);
+  }
+
+  .card-body {
+    display: none;
+    padding: 0 14px 14px;
+    border-top: 1px solid var(--card-border);
+    margin-top: 0;
+  }
+  .card-body-inner { padding-top: 12px; }
+
+  .card-section-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--orange);
+    margin-bottom: 4px;
+    margin-top: 10px;
+  }
+  .card-section-label:first-child { margin-top: 0; }
+  .card-text {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--text);
+  }
+  .card-tip {
+    background: #fff8f5;
+    border-left: 3px solid var(--orange);
+    padding: 8px 12px;
+    border-radius: 0 6px 6px 0;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--text);
+    margin-top: 4px;
+  }
+
+  .card-links {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+  }
+  .card-link {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--orange);
+    text-decoration: none;
+    padding: 4px 10px;
+    border: 1.5px solid var(--orange);
+    border-radius: 20px;
+    transition: all 0.15s;
+  }
+  .card-link:hover { background: var(--orange); color: white; }
+
+  /* ── TAG STRIP ── */
+  .tag-strip {
+    padding: 10px 14px;
+    background: var(--card-bg);
+    border-top: 1px solid var(--card-border);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .tag {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+  .tag-age      { color: var(--tag-age);      background: var(--tag-age-bg);      border: 1px solid var(--tag-age); }
+  .tag-skill    { color: var(--tag-skill);    background: var(--tag-skill-bg);    border: 1px solid var(--tag-skill); }
+  .tag-position { color: var(--tag-position); background: var(--tag-position-bg); border: 1px solid var(--tag-position); }
+  .tag-level    { color: var(--tag-level);    background: var(--tag-level-bg);    border: 1px solid var(--tag-level); }
+  .tag-type     { color: var(--tag-type);     background: var(--tag-type-bg);     border: 1px solid var(--tag-type); }
+  .tag-size     { color: var(--tag-size);     background: var(--tag-size-bg);     border: 1px solid var(--tag-size); }
+  .tag-equip    { color: var(--tag-equip);    background: var(--tag-equip-bg);    border: 1px solid var(--tag-equip); }
+  .tag-energy   { color: var(--tag-energy);   background: var(--tag-energy-bg);   border: 1px solid var(--tag-energy); }
+  .tag-fun      { color: var(--tag-fun);      background: var(--tag-fun-bg);      border: 1px solid var(--tag-fun); }
+
+  /* ── EMPTY STATE ── */
+  .empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--muted);
+  }
+  .empty-state .empty-icon { font-size: 3rem; margin-bottom: 12px; }
+  .empty-state h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--black);
+    margin-bottom: 8px;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: var(--black);
+    color: rgba(255,255,255,0.4);
+    text-align: center;
+    padding: 16px;
+    font-size: 12px;
+    margin-top: 40px;
+  }
+  .footer a { color: var(--orange); text-decoration: none; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    .filter-rows { grid-template-columns: 1fr 1fr; }
+    .drill-grid { grid-template-columns: 1fr; }
+    .stat { padding: 8px 14px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-eyebrow">Kalama Soccer Club</div>
+  <h1>Drills <span>&</span> Skills</h1>
+  <div class="header-sub">Filter by age, skill, position, and more — then expand any card for full instructions</div>
+</div>
+
+<div class="stats-bar">
+  <div class="stat">
+    <div class="stat-num" id="totalCount">—</div>
+    <div class="stat-label">Total Drills</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num" id="showingCount">—</div>
+    <div class="stat-label">Showing</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">U5–U19</div>
+    <div class="stat-label">Age Range</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">9</div>
+    <div class="stat-label">Filter Types</div>
+  </div>
+</div>
+
+<div class="filters-wrap">
+  <div class="search-row">
+    <input type="text" class="search-box" id="searchInput" placeholder="Search drills by name, description, tip…">
+    <button class="clear-btn" onclick="clearAll()">Clear All</button>
+  </div>
+  <div class="filter-rows">
+    <select class="filter-select" id="filterAge"      onchange="applyFilters(this)"><option value="">All Ages</option></select>
+    <select class="filter-select" id="filterSkill"    onchange="applyFilters(this)"><option value="">All Skills</option></select>
+    <select class="filter-select" id="filterPosition" onchange="applyFilters(this)"><option value="">All Positions</option></select>
+    <select class="filter-select" id="filterLevel"    onchange="applyFilters(this)"><option value="">All Levels</option></select>
+    <select class="filter-select" id="filterType"     onchange="applyFilters(this)"><option value="">All Types</option></select>
+    <select class="filter-select" id="filterSize"     onchange="applyFilters(this)"><option value="">Any Group Size</option></select>
+    <select class="filter-select" id="filterEquip"    onchange="applyFilters(this)"><option value="">Any Equipment</option></select>
+    <select class="filter-select" id="filterEnergy"   onchange="applyFilters(this)"><option value="">Any Energy</option></select>
+  </div>
+  <div class="results-line" id="resultsLine"></div>
+</div>
+
+<div class="grid-wrap">
+  <div class="drill-grid" id="drillGrid">
+    <div class="empty-state">
+      <div class="empty-icon">⚽</div>
+      <h3>Loading drills…</h3>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  Kalama Soccer Club · Soccer Sidekick · Questions? <a href="mailto:kalamasoccerclub.registrar@gmail.com">kalamasoccerclub.registrar@gmail.com</a>
+</div>
+
+<script src="drill-index-data.js"></script>
+<script>
+// ── EMOJI LOOKUP BY DRILL TYPE ──
+const typeEmoji = {
+  'Game/Play':  '🎮',
+  'Technical':  '🎯',
+  'Scrimmage':  '⚽',
+  'Warm-Up':    '🔥',
+  'Cool-Down':  '🧘',
+};
+
+function getDrillEmoji(drill) {
+  if (drill.diagramUrl) return null; // will use img
+  return typeEmoji[drill.drillType] || '⚽';
+}
+
+function starRating(n) {
+  const stars = ['','⭐','⭐⭐','⭐⭐⭐','⭐⭐⭐⭐','⭐⭐⭐⭐⭐'];
+  return stars[Math.min(n, 5)] || '';
+}
+
+// ── POPULATE FILTER DROPDOWNS ──
+function populateFilters() {
+  const ages      = [...new Set(drills.flatMap(d => d.ages))].sort();
+  const skills    = [...new Set(drills.flatMap(d => d.skills))].sort();
+  const positions = [...new Set(drills.flatMap(d => d.positions))].sort();
+  const levels    = ['Beginner','Intermediate','Advanced'];
+  const types     = ['Game/Play','Technical','Scrimmage','Warm-Up','Cool-Down'];
+  const sizes     = ['Individual','Pairs','Small Group (3–5)','Full Team'];
+  const equips    = [...new Set(drills.flatMap(d => d.equipment))].sort();
+  const energies  = ['Low','Medium','High'];
+
+  function fill(id, opts, placeholder) {
+    const sel = document.getElementById(id);
+    sel.innerHTML = `<option value="">${placeholder}</option>` +
+      opts.map(o => `<option value="${o}">${o}</option>`).join('');
+  }
+  fill('filterAge',      ages,      'All Ages');
+  fill('filterSkill',    skills,    'All Skills');
+  fill('filterPosition', positions, 'All Positions');
+  fill('filterLevel',    levels,    'All Levels');
+  fill('filterType',     types,     'All Types');
+  fill('filterSize',     sizes,     'Any Group Size');
+  fill('filterEquip',    equips,    'Any Equipment');
+  fill('filterEnergy',   energies,  'Any Energy Level');
+}
+
+// ── BUILD CARD HTML ──
+function buildCard(drill, idx) {
+  const emoji = getDrillEmoji(drill);
+  const diagramHtml = drill.diagramUrl
+    ? `<img src="${drill.diagramUrl}" alt="${drill.name} diagram">`
+    : `<span>${emoji}</span>`;
+
+  const ageTags      = (drill.ages      || []).map(t => `<span class="tag tag-age">${t}</span>`).join('');
+  const skillTags    = (drill.skills    || []).map(t => `<span class="tag tag-skill">${t}</span>`).join('');
+  const posTags      = (drill.positions || []).map(t => `<span class="tag tag-position">${t}</span>`).join('');
+  const levelTag     = drill.skillLevel ? `<span class="tag tag-level">${drill.skillLevel}</span>` : '';
+  const typeTag      = drill.drillType  ? `<span class="tag tag-type">${drill.drillType}</span>`  : '';
+  const sizeTag      = drill.groupSize  ? `<span class="tag tag-size">${drill.groupSize}</span>`  : '';
+  const equipTags    = (drill.equipment || []).map(t => `<span class="tag tag-equip">${t}</span>`).join('');
+  const energyTag    = drill.energyLevel ? `<span class="tag tag-energy">${drill.energyLevel} Energy</span>` : '';
+  const funTag       = drill.funFactor   ? `<span class="tag tag-fun">${starRating(drill.funFactor)}</span>` : '';
+
+  const linksHtml = [
+    drill.videoUrl    ? `<a class="card-link" href="${drill.videoUrl}" target="_blank" rel="noopener">▶ Watch Video</a>` : '',
+    drill.resourceUrl ? `<a class="card-link" href="${drill.resourceUrl}" target="_blank" rel="noopener">📄 Source</a>` : '',
+  ].filter(Boolean).join('');
+
+  const durationHtml = drill.duration ? `<span class="card-meta-item">⏱ ${drill.duration}</span>` : '';
+  const groupHtml    = drill.groupSize ? `<span class="card-meta-item">👥 ${drill.groupSize}</span>` : '';
+
+  return `
+<div class="drill-card" data-idx="${idx}" onclick="toggleCard(this)">
+  <div class="card-top">
+    <div class="card-diagram">${diagramHtml}</div>
+    <div class="card-header">
+      <div class="card-name">${drill.name}</div>
+      <div class="card-meta">
+        ${durationHtml}
+        ${groupHtml}
+        ${drill.skillLevel ? `<span class="card-meta-item">📊 ${drill.skillLevel}</span>` : ''}
+      </div>
+    </div>
+    <div class="expand-icon">▾</div>
+  </div>
+  <div class="tag-strip">
+    ${ageTags}${skillTags}${posTags}${levelTag}${typeTag}${sizeTag}${equipTags}${energyTag}${funTag}
+  </div>
+  <div class="card-body">
+    <div class="card-body-inner">
+      ${drill.description ? `
+        <div class="card-section-label">How It Works</div>
+        <div class="card-text">${drill.description}</div>
+      ` : ''}
+      ${drill.setup ? `
+        <div class="card-section-label">Setup</div>
+        <div class="card-text">${drill.setup}</div>
+      ` : ''}
+      ${drill.coachTip ? `
+        <div class="card-section-label">Coach Tip</div>
+        <div class="card-tip">💡 ${drill.coachTip}</div>
+      ` : ''}
+      ${linksHtml ? `
+        <div class="card-section-label">Resources</div>
+        <div class="card-links">${linksHtml}</div>
+      ` : ''}
+    </div>
+  </div>
+</div>`;
+}
+
+// ── RENDER ALL CARDS ──
+function renderCards() {
+  const grid = document.getElementById('drillGrid');
+  grid.innerHTML = drills.map((d, i) => buildCard(d, i)).join('');
+  document.getElementById('totalCount').textContent = drills.length;
+  document.getElementById('showingCount').textContent = drills.length;
+  document.getElementById('resultsLine').innerHTML =
+    `Showing <span>${drills.length}</span> of <span>${drills.length}</span> drills — click any card to expand`;
+}
+
+// ── TOGGLE CARD EXPAND ──
+function toggleCard(card) {
+  card.classList.toggle('expanded');
+}
+
+// ── APPLY FILTERS ──
+function applyFilters(changedSelect) {
+  if (changedSelect) {
+    changedSelect.classList.toggle('active', changedSelect.value !== '');
+  }
+
+  const search   = document.getElementById('searchInput').value.toLowerCase().trim();
+  const age      = document.getElementById('filterAge').value;
+  const skill    = document.getElementById('filterSkill').value;
+  const position = document.getElementById('filterPosition').value;
+  const level    = document.getElementById('filterLevel').value;
+  const type     = document.getElementById('filterType').value;
+  const size     = document.getElementById('filterSize').value;
+  const equip    = document.getElementById('filterEquip').value;
+  const energy   = document.getElementById('filterEnergy').value;
+
+  const cards = document.querySelectorAll('.drill-card');
+  let visible = 0;
+
+  cards.forEach((card, i) => {
+    const d = drills[i];
+    const searchText = [d.name, d.description, d.coachTip, d.setup, d.source]
+      .filter(Boolean).join(' ').toLowerCase();
+
+    const pass =
+      (!search   || searchText.includes(search)) &&
+      (!age      || (d.ages      || []).includes(age)) &&
+      (!skill    || (d.skills    || []).includes(skill)) &&
+      (!position || (d.positions || []).includes(position)) &&
+      (!level    || d.skillLevel === level) &&
+      (!type     || d.drillType  === type) &&
+      (!size     || d.groupSize  === size) &&
+      (!equip    || (d.equipment || []).includes(equip)) &&
+      (!energy   || d.energyLevel === energy);
+
+    card.classList.toggle('hidden', !pass);
+    if (pass) visible++;
+  });
+
+  document.getElementById('showingCount').textContent = visible;
+  const total = drills.length;
+  const resultsLine = document.getElementById('resultsLine');
+
+  if (visible === 0) {
+    resultsLine.innerHTML = `<span style="color:#c0392b">No drills match your filters</span> — try clearing some`;
+    document.getElementById('drillGrid').innerHTML = `
+      <div class="empty-state">
+        <div class="empty-icon">🔍</div>
+        <h3>No drills found</h3>
+        <p>Try different filters or <button onclick="clearAll()" style="background:none;border:none;color:var(--orange);font-weight:700;cursor:pointer;font-size:inherit">clear all filters</button></p>
+      </div>`;
+  } else {
+    // Remove empty state if present
+    const empty = document.querySelector('.empty-state');
+    if (empty) { renderCards(); applyFiltersNoRender(); return; }
+    resultsLine.innerHTML = `Showing <span>${visible}</span> of <span>${total}</span> drills`;
+  }
+}
+
+function applyFiltersNoRender() {
+  const search   = document.getElementById('searchInput').value.toLowerCase().trim();
+  const age      = document.getElementById('filterAge').value;
+  const skill    = document.getElementById('filterSkill').value;
+  const position = document.getElementById('filterPosition').value;
+  const level    = document.getElementById('filterLevel').value;
+  const type     = document.getElementById('filterType').value;
+  const size     = document.getElementById('filterSize').value;
+  const equip    = document.getElementById('filterEquip').value;
+  const energy   = document.getElementById('filterEnergy').value;
+
+  const cards = document.querySelectorAll('.drill-card');
+  let visible = 0;
+  cards.forEach((card, i) => {
+    const d = drills[i];
+    const searchText = [d.name, d.description, d.coachTip, d.setup, d.source]
+      .filter(Boolean).join(' ').toLowerCase();
+    const pass =
+      (!search   || searchText.includes(search)) &&
+      (!age      || (d.ages      || []).includes(age)) &&
+      (!skill    || (d.skills    || []).includes(skill)) &&
+      (!position || (d.positions || []).includes(position)) &&
+      (!level    || d.skillLevel === level) &&
+      (!type     || d.drillType  === type) &&
+      (!size     || d.groupSize  === size) &&
+      (!equip    || (d.equipment || []).includes(equip)) &&
+      (!energy   || d.energyLevel === energy);
+    card.classList.toggle('hidden', !pass);
+    if (pass) visible++;
+  });
+  document.getElementById('showingCount').textContent = visible;
+  document.getElementById('resultsLine').innerHTML =
+    `Showing <span>${visible}</span> of <span>${drills.length}</span> drills`;
+}
+
+// ── CLEAR ALL ──
+function clearAll() {
+  document.getElementById('searchInput').value = '';
+  ['filterAge','filterSkill','filterPosition','filterLevel',
+   'filterType','filterSize','filterEquip','filterEnergy'].forEach(id => {
+    const el = document.getElementById(id);
+    el.value = '';
+    el.classList.remove('active');
+  });
+  renderCards();
+}
+
+// ── SEARCH INPUT ──
+document.getElementById('searchInput').addEventListener('input', () => applyFilters(null));
+
+// ── INIT ──
+populateFilters();
+renderCards();
+</script>
+</body>
+</html>
