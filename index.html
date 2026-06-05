@@ -19,7 +19,6 @@
     --text: #333333;
     --muted: #666666;
     --white: #ffffff;
-    /* tag colors */
     --tag-age:      #F26522; --tag-age-bg:      #fff3ee;
     --tag-skill:    #2563eb; --tag-skill-bg:    #eff6ff;
     --tag-position: #7c3aed; --tag-position-bg: #f5f3ff;
@@ -38,7 +37,6 @@
     min-height: 100vh;
   }
 
-  /* ── HEADER ── */
   .header {
     background: linear-gradient(135deg, #1A1A1A 0%, #3a1e00 55%, #1A1A1A 100%);
     padding: 28px 24px 22px;
@@ -68,7 +66,6 @@
     margin-top: 8px;
   }
 
-  /* ── STATS BAR ── */
   .stats-bar {
     background: var(--black);
     display: flex;
@@ -96,7 +93,6 @@
     letter-spacing: 1px;
   }
 
-  /* ── FILTERS ── */
   .filters-wrap {
     background: var(--white);
     border-bottom: 3px solid var(--orange);
@@ -172,7 +168,6 @@
   }
   .results-line span { color: var(--orange); font-weight: 700; }
 
-  /* ── GRID ── */
   .grid-wrap {
     padding: 20px;
     max-width: 1400px;
@@ -184,7 +179,6 @@
     gap: 16px;
   }
 
-  /* ── DRILL CARD ── */
   .drill-card {
     background: var(--white);
     border: 1px solid var(--card-border);
@@ -225,11 +219,11 @@
   }
   .card-header {
     flex: 1;
-    padding: 12px 14px;
+    padding: 10px 14px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 4px;
+    gap: 3px;
   }
   .card-name {
     font-family: 'Barlow Condensed', sans-serif;
@@ -238,6 +232,14 @@
     color: var(--black);
     line-height: 1.2;
   }
+  /* ── COACHING OBJECTIVE — always visible ── */
+  .card-objective {
+    font-size: 11.5px;
+    font-style: italic;
+    color: var(--muted);
+    line-height: 1.4;
+    margin-top: 1px;
+  }
   .card-meta {
     font-size: 11px;
     color: var(--muted);
@@ -245,6 +247,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
+    margin-top: 3px;
   }
   .card-meta-item {
     display: flex;
@@ -270,7 +273,6 @@
     display: none;
     padding: 0 14px 14px;
     border-top: 1px solid var(--card-border);
-    margin-top: 0;
   }
   .card-body-inner { padding-top: 12px; }
 
@@ -299,7 +301,6 @@
     color: var(--text);
     margin-top: 4px;
   }
-
   .card-links {
     display: flex;
     gap: 8px;
@@ -318,7 +319,6 @@
   }
   .card-link:hover { background: var(--orange); color: white; }
 
-  /* ── TAG STRIP ── */
   .tag-strip {
     padding: 10px 14px;
     background: var(--card-bg);
@@ -344,7 +344,6 @@
   .tag-energy   { color: var(--tag-energy);   background: var(--tag-energy-bg);   border: 1px solid var(--tag-energy); }
   .tag-fun      { color: var(--tag-fun);      background: var(--tag-fun-bg);      border: 1px solid var(--tag-fun); }
 
-  /* ── EMPTY STATE ── */
   .empty-state {
     grid-column: 1 / -1;
     text-align: center;
@@ -360,7 +359,6 @@
     margin-bottom: 8px;
   }
 
-  /* ── FOOTER ── */
   .footer {
     background: var(--black);
     color: rgba(255,255,255,0.4);
@@ -371,7 +369,6 @@
   }
   .footer a { color: var(--orange); text-decoration: none; }
 
-  /* ── RESPONSIVE ── */
   @media (max-width: 600px) {
     .filter-rows { grid-template-columns: 1fr 1fr; }
     .drill-grid { grid-template-columns: 1fr; }
@@ -419,7 +416,7 @@
     <select class="filter-select" id="filterType"     onchange="applyFilters(this)"><option value="">All Types</option></select>
     <select class="filter-select" id="filterSize"     onchange="applyFilters(this)"><option value="">Any Group Size</option></select>
     <select class="filter-select" id="filterEquip"    onchange="applyFilters(this)"><option value="">Any Equipment</option></select>
-    <select class="filter-select" id="filterEnergy"   onchange="applyFilters(this)"><option value="">Any Energy</option></select>
+    <select class="filter-select" id="filterEnergy"   onchange="applyFilters(this)"><option value="">Any Energy Level</option></select>
   </div>
   <div class="results-line" id="resultsLine"></div>
 </div>
@@ -439,7 +436,213 @@
 
 <script src="drill-index-data.js"></script>
 <script>
-// ── EMOJI LOOKUP BY DRILL TYPE ──
+// ── COACHING OBJECTIVES LOOKUP ──────────────────────────────────────────────
+// Keyed by exact drill name. Displayed always-visible under the drill name.
+// To add a new drill's objective, add a line here: "Drill Name": "objective text"
+const coachingObjectives = {
+  "Soccer Bees": "Getting kids comfortable moving with the ball in a crowd — disguised as buzzing chaos",
+  "Coach Says": "Teaching the ball stop, turn, and speed change without it feeling like a lesson",
+  "Crocodiles": "Learning to dribble with head up and protect the ball — kids figure it out on their own",
+  "Gate Goals": "Building the habit of looking up while dribbling to find targets ahead",
+  "Ouch!": "Practicing aimed shots with intention — striking through the center of the ball",
+  "Rocket Launch": "Pure shooting repetition — as many kicks on goal as possible in a short window",
+  "Pairs Passing": "First introduction to inside-of-foot passing — push, don't kick",
+  "Red Light Green Light": "Ball control on command — stopping, slowing, and speeding up on cue",
+  "Follow the Leader": "Spatial awareness and ball control by mimicking a moving leader",
+  "Wreck It Ralph": "Dribbling with awareness of others while tracking your own ball — heads up naturally",
+  "Soccer Combat": "First taste of 1v1 competition — racing to a ball and finishing under pressure",
+  "Steal the Treasure": "Dribbling with purpose and protecting the ball from others",
+  "2-Headed Monster Invasion": "Reading when it's safe to move — timing and spatial decision-making",
+  "Field of Doom": "Dribbling from safe zone to safe zone while reading where defenders are",
+  "Triangle Gate Challenge": "Combining dribbling with accuracy — guide the ball through a target",
+  "Triangle Gate Challenge with Guards": "Identifying open spaces and timing a run when a defender is distracted",
+  "Monsters Inc.": "Stopping the ball cleanly under a foot — the most important basic skill",
+  "Sailing the Seas": "Responding to commands instantly — changes of speed and direction with the ball",
+  "Pirates of the Caribbean": "Keeping shots low and on target — striking through the middle of the ball",
+  "Bruce the Shark vs Nemo": "Dribbling past a defender by picking the right moment and direction",
+  "Driving Through Tunnels": "Accuracy and low strikes — guiding the ball through a small moving target",
+  "Police Patrol": "Shielding the ball — keeping your body between the defender and the ball",
+  "Crushing Monster": "Escaping pressure by changing direction quickly with the ball",
+  "4 Surface Dribbling": "Learning every part of the foot that can touch the ball — outside, inside, laces, sole",
+  "Hungry Hungry Hippos": "Dribbling with directional awareness — reading the path ahead before moving",
+  "Crocs in the River": "Finding the gap in a defense and timing a run through it",
+  "Hunting the Coach": "Striking with the inside foot toward a moving target — accuracy over power",
+  "Boston Bulldogs": "Running with the ball through pressure — when to go small, when to go big",
+  "Doggy Goal Combat": "Reacting first to a loose ball and finishing under pressure",
+  "4 Surface Dribbling to 4 Goals": "Applying all four foot surfaces in a game context — head up to find the goal",
+  "Sid the Sloth vs Crash & Eddy": "Changing direction and pace to get past a slow defender",
+  "Scrat's Acorn Hunt": "Dribbling to specific targets while protecting from defenders",
+  "6 Surface Dribbling": "Building a complete vocabulary of foot touches — every surface has a purpose",
+  "Freeze Tag": "Dribbling with awareness of teammates as well as defenders — heads must be up",
+  "1v1 Dribble Challenge": "First direct competition — beating one defender and protecting your goal",
+  "Cat in the Hat vs Things 1 & 2": "Controlling speed — big touches to accelerate, small touches to slow and turn",
+  "Tiggers vs Rabbits": "Shooting at a moving target low — striking the center of the ball with purpose",
+  "Good Minions vs Evil Minions": "Combining dribbling and shooting in one action — strike while in motion",
+  "3v3 / 4v4 Scrimmage": "Applying everything learned in a real game — decisions, instincts, teamwork",
+  "Partner Bandits": "Working with a teammate — when to pass, when to dribble, and where to move",
+  "2v2 to 4 Corner Goals": "Switching the point of attack — if one goal is blocked, find the open one",
+  "Boston Bulldogs (Partners)": "Combining with a partner to create a passing option and beat a defender",
+  "2v2 to End Zones": "Drawing a defender before passing to the open teammate behind them",
+  "Guard the Goals": "Defending multiple targets at once — where is the most dangerous threat?",
+  "4 Corner Shooting & Defending": "Blocking the goal while moving to pressure the ball — two jobs at once",
+  "3v3 Defend Your Goal": "Covering the goal-side first, then pressuring the ball — priority order",
+  "Groups of 2 vs The Defenders": "Creating a 2v1 by dribbling toward a defender and releasing to a free teammate",
+  "2v2 Defend 3 Goals — Counter to 1": "Defending the most dangerous goal while tracking the ball",
+  "Defend Each Zone": "Staying in your zone and delaying attackers — organization over chasing",
+  "2v1 to Side Goals (Reloading)": "Defending when outnumbered — delay, angle, and don't dive in",
+  "Fantastic Fours Festival": "Playing full games with different scoring rules — reading and adapting",
+  "5v3 to Goal & Dribbling Gates": "Spreading wide to create passing options when building from the back",
+  "6v4 to Goal & Counter Goals": "Wide players staying wide — giving the ball carrier three options at all times",
+  "4v4 to Goal & End Zone": "Creating diagonal passing lanes in the attacking half",
+  "4v5 to Goal & 3 Small Goals": "Creating a 2v1 with a wall pass to break through a packed defense",
+  "4v4 Attacking to Goal & Dribbling Gates (U10)": "Recognizing when to shoot and when to combine near goal",
+  "4v5 Scoring Goals & 2 Small Goals": "Shooting low to the corners — accuracy beats the goalkeeper",
+  "Defending — 4v5 Pressure & End Zone": "Getting a defender between the ball and goal — blocking the forward pass",
+  "Defending — 4v5 Compact & Dribbling Gates": "Staying compact as a unit — close the space, don't chase the ball",
+  "Defending — 3v3 Compact Small Goals": "Shield the goal, compress behind, then press — the three-step order",
+  "Defending — 5v4 Outnumber & Counter": "Using numerical advantage to double-team and close passing lanes",
+  "Capture the Balls": "Strategic thinking — when to attack and when to defend your own base",
+  "Team Ball Tag": "Communication and spatial awareness — who needs help, who is free?",
+  "Shield Steal": "Protecting the ball with your body while staying aware of others around you",
+  "Team Handball": "Moving to open space to receive a pass — the core of all team play",
+  "Gates Passing": "Weight of pass — firm enough to reach the gate, accurate enough to go through",
+  "2 vs 1 to Goal": "Drawing the defender before releasing — patience in a 2v1 situation",
+  "1 vs 1 to Endlines": "Attacking with pace and change of direction — committing the defender",
+  "Flying Numbers": "Reading the game instantly when entering play — find your role immediately",
+  "Clean Your Backyard": "Striking through the ball with laces — power and direction combined",
+  "4 vs 2 Keep-Away": "Always having two passing options — move after you pass, never stand still",
+  "3 vs 2 to Goal": "Exploiting a numerical advantage — use the extra player to create a clean chance",
+  "Rondo 5v2": "Keeping the ball under pressure — quick touch, find the open player, move immediately",
+  "Hot Box": "Playing through the middle — recognizing when the center is open and attacking it",
+  "Barcelona": "Stringing passes together before attacking — patience builds better chances",
+  "Liverpool": "Winning the ball high up the field — pressing and rewarding it with bonus points",
+  "Shrinking Field": "Adapting to less space — fewer touches, quicker decisions as room disappears",
+  "Bumper Cars": "Reading when to stay safe and when to run — spatial awareness with the ball",
+  "Tiger Tails": "Change of direction, explosive speed, and body awareness — no ball needed",
+  "Cat and Mouse": "Scanning before moving — look where the defender is before choosing a direction",
+  "Zombie Attack": "Disguising movement — fake one way, go the other with the ball",
+  "Ghostbusters": "Shielding the ball and looking up for frozen teammates who need rescuing",
+  "Gladiators": "Protecting your ball while knocking away the opponent's — 1v1 shielding duel",
+  "Pizza Party": "Committing a defender with speed before cutting away sharply",
+  "No Escape": "Delaying an attacker — slow them down, stay on your feet, wait for help",
+  "Interceptors": "Reading where the pass is going before it's kicked — position in the lane, not behind",
+  "Top Gun": "Shooting from a wide angle — aim across the goalkeeper to the far post",
+  "Behind Enemy Lines": "Staying compact in defense — read where the pass is going and cut the lane",
+  "Aliens": "Reading a defender's position and timing a run to safety before they get close",
+  "King of the Ring": "Shielding with your body and small touches — last player with a ball wins",
+  "Connect Four": "Moving into space before the ball arrives — give the passer an option early",
+  "Tin Pan Alley": "Defending as a unit in a narrow channel — angle and delay before committing",
+  "Switch On": "Recognizing a congested side and switching the ball to space on the other side",
+  "Reactor": "One-touch shooting — read the first touch, pick a corner, shoot immediately",
+  "Secret Weapon": "Protecting a specific player's scoring chances — disguise who your threat is",
+  "The Alamo": "Reading which gate is unguarded — fake to one, go through another",
+  "Powerball": "Change of pace to get past a defender — sprint to an open pot before they react",
+  "The Swamp": "Building through the middle — the ball must go through the center before shooting",
+  "Mazy Runs": "Completing a dribbling run through a channel before delivering into the box",
+  "Through the Gate": "Moving before the pass arrives — a stationary target is an easy intercept",
+  "Don't Feed the Monkeys": "Passing away from pressure — the ball goes to the space, not the defender",
+  "Over the Border": "Timing a forward run to receive a pass — arrive as the ball arrives",
+  "Around the House": "Getting the ball wide early and combining to go around the defense",
+  "Tomb Raiders": "Quick passing in a tight zone while defenders try to steal from the tunnels",
+  "Pin It to Win It": "Winning the ball in 2v1 — angle the approach to cut off the easier pass",
+  "Safety Box": "Playing to a free wide player immediately — they have time, use it",
+  "Pool Table": "Using all six pockets — which one is open right now? Don't fixate on one",
+  "Shapes": "One-touch passing in different shapes — each shape demands different movement patterns",
+  "Skill Relays": "Executing a specific skill at pace — short pass, receive, return, sprint back",
+  "Six Shooter": "Creating a shooting chance quickly — how many possible shots did you not take?",
+  "Spin to Win": "Back-to-goal control and spin — protect first touch, turn away, shoot",
+  "Tunnel Vision": "Playing through the middle in tight spaces — no wide option, find central solutions",
+  "Up and Down": "Transitioning in both directions — what do you do the moment possession changes?",
+  "Magic Number": "Entering live play instantly — find your role before you touch the ball",
+  "Pick Pockets": "Dribbling with speed and purpose — steal and drive back before opponents react",
+  "Bodyguards": "Staying goal-side of your attacker — block the shot, not the player",
+  "Under Arrest": "Rescuing teammates requires timing — don't get arrested trying to unfreeze someone",
+  "Sweeper Keeper": "The goalkeeper as an outlet — look up first, distribute accurately and quickly",
+  "Find the Keeper": "Always looking for the goalkeeper as a passing option — they're always free",
+  "Crossfire": "Timing runs into the box to match when the wide player delivers the cross",
+  "Space Wars": "Weight of pass — too hard flies past the zone, too soft gets intercepted",
+  "Long and Short of It": "Switching play with a long pass when the short option is blocked",
+  "It's Behind You": "First step is everything — turn on the ball, get goal-side before the attacker",
+  "Triple Whammy": "Reacting to a loose ball from multiple directions — who takes it?",
+  "Soccer Nuts": "Weight of pass to reach a specific target from distance — not too hard, not too soft",
+  "Cushion Tennis": "Receiving the ball softly — a cushion touch, not a clearance",
+  "Throw-in Technique": "Legal throw-in mechanics — both hands, from behind the head, both feet grounded",
+  "Throw-in Frenzy": "Taking throw-ins quickly before the defense organizes — look up before the ball goes out",
+  "New Scotland Yard": "The fastest throw-in wins — look up before it goes out, receiver already moving",
+  "Cops and Robbers": "Shielding and dribbling under pressure — protect your ball, steal theirs",
+  "Sharks and Fishes": "Keeping the ball close under pressure — small touches when a shark is near",
+  "Rondo Decisions": "Deciding what to do BEFORE the ball arrives — call it, then do it",
+  "Find the Free Player": "Knowing where the free player is before receiving — scan, then pass",
+  "Triangle Keep Ball": "Balancing two jobs at once — press the ball AND protect the central triangle",
+  "Bib Pull-Away": "Protecting something behind you while staying mobile — awareness in all directions",
+  "Chase the Cones": "High-energy arrival activity — dribbling with purpose and a clear goal",
+  "Dive Bombers": "Heading accuracy — eyes open, forehead contact, directing the ball with purpose",
+  "Head for Home": "Attacking and defensive headers in game context — attack early, clear wide",
+  "Head Up": "Defensive headers — height, distance, and direction — attack the ball before it arrives",
+  "Chippy": "The chip shot — stab under the ball with a locked ankle to lift it over the goalkeeper",
+  "Buddy Hollys": "Volley and half-volley technique — eyes on ball, lean over, contact center",
+  "Meteors": "Long pass accuracy — serve the ball into the space just behind the last defender",
+  "Jeepers Keepers": "GK shot-stopping — get up immediately after every save and reset position",
+  "Airball": "GK aerial command — catch when confident, punch when under pressure",
+  "Robocops": "Understanding the GK's job — receiving a cross as a thrown ball builds real empathy",
+  "Funny Turns": "Turning with the ball — robot, ballerina, race car each teaches a real technique",
+  "Best Foot Forward": "Non-dominant foot development — players who use both feet are harder to defend",
+  "Cut In Cut Out": "Reading the defender to choose — cut inside if they cut off outside, and vice versa",
+  "Inside Out": "Showing attackers to the outside — away from goal, toward the touchline",
+  "Star Gates": "Switching play to find open gates — scan the whole field, not just what's in front",
+  "Pin Point": "Accuracy before power — hitting the exact target beats blasting it",
+  "Twins": "Involving your partner — you literally cannot score without them touching the ball first",
+  "U12 Build Up Own Half — 6v5 to Goal & Dribbling Gates": "Spreading wide to create passing options when building from the back",
+  "U12 Build Up Own Half — 5v4 to Goal & Two Targets": "Dispersing wide and connecting around defenders to reach the target players",
+  "U12 Build Up Opp Half — 5v6 to Goal & Counter Goals": "Maintaining possession in the attacking half and creating 2v1 combinations",
+  "U12 Build Up Opp Half — 5v6 to Goal & End Zone": "Switching the attack when one side is blocked — find the open side",
+  "U12 Scoring Goals — 5v5 to Goal & Two Counter Goals": "Shooting low to the corners — creating a 2v1 wall pass combination near goal",
+  "U12 Scoring Goals — 5v5 to Goal": "Recognizing the right moment to shoot vs. pass in the final third",
+  "U12 Defending Opp Half — 5v6 to Goal & Jokers": "Pressing as a unit in the opponent's half — block the forward pass first",
+  "U12 Defending Opp Half — 5v5 to Goal & 3 Gates": "Staying compact and pressing together — close the space as a team",
+  "U12 Prevent Build-Up Own Half — 5v4 to 4 Small Goals": "Blocking the path to goal and double-teaming when you have the numbers",
+  "U12 Prevent Build-Up Own Half — 6v5 to Regular Goals": "Creating and maintaining a compact defensive block before pressing",
+  "U12 Prevent Scoring — 6v4 to Goal & 2 Small Goals": "Minimizing passing lanes through compactness — closest defender then presses",
+  "U12 Prevent Scoring — 6v5 to Regular Goals": "Blocking the shot path and double-teaming when numerically superior",
+  "U12 Prevent Opponent Build-Up — 5v6 to Goal & Counter Goals (Fall 2019)": "Attacking the ball as a unit — press together, steal together",
+  "Knockout (King of the Ring)": "Shielding the ball to survive while attacking everyone else's — last player wins",
+  "Defeat the Coach": "Shooting at a moving target — dribble close, pick the moment, strike low",
+  "Four Squares": "Spreading out to create scoring options — kids discover this on their own",
+  "Cone Handball": "Moving without the ball to create passing lanes — same concept as soccer",
+  "Ball Chaser": "Running with the ball at speed — large touch forward, accelerate, keep control",
+  "2v2 Breakout": "Transitioning instantly from defending to attacking — first touch goes forward",
+  "1v1 with Bail Out": "Deciding when to take on vs. when to recycle — not every 1v1 needs to be won",
+  "1v1 Ladder": "Beating two defenders in sequence — accelerate after the first, momentum is the advantage",
+  "8v8 Thirds": "Running with the ball to advance zones — you must carry it forward, not pass it",
+  "4v1 Add a Defender": "Keeping space open under increasing pressure — move after every pass",
+  "8v2 Possession with Flying Twos": "Moving after every pass — constant repositioning to support the ball",
+  "4v4 Everyone Recovers": "Recovering to shape after losing the ball — back first, then press",
+  "Shot Followed by 1v1": "Transitioning mentally from shooting to defending in the same second",
+  "US National Team Finishing Game": "Building patiently in the final third — use the safe zone to find gaps",
+  "3v2 with Recovery Player": "Attacking quickly before the recovering defender arrives — 3v2 window is short",
+  "Inter Milan Small Sided Game": "Staying alert at all times — your number can be called on any play",
+  "Passing Square Warmup": "Timing the run off the cone — arrive as the ball arrives, open hips to see the next pass",
+  "Double Target Rondo": "Transitioning quickly from possession to goal — pass back, sprint wide, open hips",
+  "3-Ball Pressure": "Keeping multiple balls alive under simultaneous pressure — counter the moment you win one",
+  "Attract and Attack": "Pulling defenders to one side with short passes, then exploiting the space that opens",
+  "Dutch Possess and Counter": "Everyone must be past the halfway line to score — stay connected in attack",
+  "Win Ball in Midfield Rondo": "Knowing your positional role the instant possession changes",
+  "Game Model Rondo": "Four passes in the box unlocks a 7v4 wave — possession triggers the attack",
+  "U13 Build Up Own Half — 7v5 to Goal & Dribbling Gates": "Building out of the back on a full-width field — spread wide, dribble through gaps",
+  "U13 Build Up Own Half — 7v5 to Goal & Counter Goals": "Switching the point of attack when one side is blocked",
+  "U13 Build Up Opp Half — 6v7 to Goal & Two Targets": "Maintaining possession against a packed defense and creating 2v1 combinations",
+  "U13 Scoring Goals — 5v6 to Goal & Dribbling Gates": "Creating scoring chances when outnumbered — combination play and accurate finishing",
+  "U13 Scoring Goals — 6v6 to Regular Goals": "Choosing the right moment to shoot — low to the corners, not just anywhere",
+  "U13 Build Up Opp Half — 7v7 to Goal (Switch Attack)": "Switching when one side is crowded — find the space on the other side",
+  "U13 Defend Opp Half — 6v7 to Goal & Jokers": "Blocking the forward pass in the opponent's half — press at the right moment",
+  "U13 Defend Opp Half — 6v8 to Goal & Dribbling Gates": "Compact first, then press — the defensive block before the pressure",
+  "U13 Prevent Build-Up Own Half — 6v5 to Mini Goals": "Blocking the path to goal and pressing when you have the numbers",
+  "U13 Prevent Build-Up Own Half — 7v6 to Goal": "Closing passing lanes as a compact block before the closest defender presses",
+  "U13 Prevent Scoring — 7v5 to Goal & Dribbling Gates": "Compressing passing lanes and transitioning quickly to attack through the gates",
+  "U13 Prevent Scoring — 7v6 to Regular Goals": "Blocking the shot path, pressing the attacker, and double-teaming when superior"
+};
+// ────────────────────────────────────────────────────────────────────────────
+
 const typeEmoji = {
   'Game/Play':  '🎮',
   'Technical':  '🎯',
@@ -449,7 +652,7 @@ const typeEmoji = {
 };
 
 function getDrillEmoji(drill) {
-  if (drill.diagramUrl) return null; // will use img
+  if (drill.diagramUrl) return null;
   return typeEmoji[drill.drillType] || '⚽';
 }
 
@@ -458,7 +661,6 @@ function starRating(n) {
   return stars[Math.min(n, 5)] || '';
 }
 
-// ── POPULATE FILTER DROPDOWNS ──
 function populateFilters() {
   const ages      = [...new Set(drills.flatMap(d => d.ages))].sort();
   const skills    = [...new Set(drills.flatMap(d => d.skills))].sort();
@@ -484,12 +686,17 @@ function populateFilters() {
   fill('filterEnergy',   energies,  'Any Energy Level');
 }
 
-// ── BUILD CARD HTML ──
 function buildCard(drill, idx) {
   const emoji = getDrillEmoji(drill);
   const diagramHtml = drill.diagramUrl
     ? `<img src="${drill.diagramUrl}" alt="${drill.name} diagram">`
     : `<span>${emoji}</span>`;
+
+  // Look up coaching objective — fall back to empty string if not found
+  const objective = coachingObjectives[drill.name] || (drill.coachingObjective || '');
+  const objectiveHtml = objective
+    ? `<div class="card-objective">${objective}</div>`
+    : '';
 
   const ageTags      = (drill.ages      || []).map(t => `<span class="tag tag-age">${t}</span>`).join('');
   const skillTags    = (drill.skills    || []).map(t => `<span class="tag tag-skill">${t}</span>`).join('');
@@ -515,6 +722,7 @@ function buildCard(drill, idx) {
     <div class="card-diagram">${diagramHtml}</div>
     <div class="card-header">
       <div class="card-name">${drill.name}</div>
+      ${objectiveHtml}
       <div class="card-meta">
         ${durationHtml}
         ${groupHtml}
@@ -549,7 +757,6 @@ function buildCard(drill, idx) {
 </div>`;
 }
 
-// ── RENDER ALL CARDS ──
 function renderCards() {
   const grid = document.getElementById('drillGrid');
   grid.innerHTML = drills.map((d, i) => buildCard(d, i)).join('');
@@ -559,12 +766,10 @@ function renderCards() {
     `Showing <span>${drills.length}</span> of <span>${drills.length}</span> drills — click any card to expand`;
 }
 
-// ── TOGGLE CARD EXPAND ──
 function toggleCard(card) {
   card.classList.toggle('expanded');
 }
 
-// ── APPLY FILTERS ──
 function applyFilters(changedSelect) {
   if (changedSelect) {
     changedSelect.classList.toggle('active', changedSelect.value !== '');
@@ -585,7 +790,8 @@ function applyFilters(changedSelect) {
 
   cards.forEach((card, i) => {
     const d = drills[i];
-    const searchText = [d.name, d.description, d.coachTip, d.setup, d.source]
+    const obj = coachingObjectives[d.name] || '';
+    const searchText = [d.name, d.description, d.coachTip, d.setup, d.source, obj]
       .filter(Boolean).join(' ').toLowerCase();
 
     const pass =
@@ -616,7 +822,6 @@ function applyFilters(changedSelect) {
         <p>Try different filters or <button onclick="clearAll()" style="background:none;border:none;color:var(--orange);font-weight:700;cursor:pointer;font-size:inherit">clear all filters</button></p>
       </div>`;
   } else {
-    // Remove empty state if present
     const empty = document.querySelector('.empty-state');
     if (empty) { renderCards(); applyFiltersNoRender(); return; }
     resultsLine.innerHTML = `Showing <span>${visible}</span> of <span>${total}</span> drills`;
@@ -638,7 +843,8 @@ function applyFiltersNoRender() {
   let visible = 0;
   cards.forEach((card, i) => {
     const d = drills[i];
-    const searchText = [d.name, d.description, d.coachTip, d.setup, d.source]
+    const obj = coachingObjectives[d.name] || '';
+    const searchText = [d.name, d.description, d.coachTip, d.setup, d.source, obj]
       .filter(Boolean).join(' ').toLowerCase();
     const pass =
       (!search   || searchText.includes(search)) &&
@@ -658,7 +864,6 @@ function applyFiltersNoRender() {
     `Showing <span>${visible}</span> of <span>${drills.length}</span> drills`;
 }
 
-// ── CLEAR ALL ──
 function clearAll() {
   document.getElementById('searchInput').value = '';
   ['filterAge','filterSkill','filterPosition','filterLevel',
@@ -670,10 +875,8 @@ function clearAll() {
   renderCards();
 }
 
-// ── SEARCH INPUT ──
 document.getElementById('searchInput').addEventListener('input', () => applyFilters(null));
 
-// ── INIT ──
 populateFilters();
 renderCards();
 </script>
