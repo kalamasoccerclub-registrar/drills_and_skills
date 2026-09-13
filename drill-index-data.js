@@ -2,8 +2,8 @@
 // KALAMA SOCCER CLUB — DRILL INDEX DATA
 // Feeds the Drill Finder filter page (Option A — smart filter).
 // Update this file with every new drill as age pages are built.
-// Last updated: U13-19 Expansion Batch 1 — 214 drills; reopened for U13+/U19 catch-up build
-// Total drills: 214
+// Last updated: U13-19 Expansion Batch 2 — 226 drills; transition play + team defending
+// Total drills: 226
 // Sources in file:
 //   MA Youth Soccer U6 (10 weeks) — 30 drills
 //   MA Youth Soccer U8 (12 weeks) — 21 drills
@@ -16,9 +16,12 @@
 //   Soccer Coach Weekly Batch 3C (arrival activities) — 7 drills
 //   Soccer Coach Weekly Batch 3D (heading/specialist) — 16 drills
 //   Original U5/U6/U7 (various sources) — 9 drills
-// ─── PENDING: continued U13-19 expansion (batches 2+), U11/U12 top-off ───
 // Batch 1 added 14 drills: 4 pure 1v1 defending, 4 possession-under-pressure
 // small-sided games, 6 passing/first-touch technical warm-ups.
+// Batch 2 added 12 drills: transition play (both directions) and team
+// defending / counter-pressing structure.
+// ─── PENDING: continued U13-19 expansion (batches 3+ — shooting/finishing
+// still thin), U11/U12 top-off, U5-U7 top-off ───
 // ============================================================
 
 const drills = [
@@ -4570,6 +4573,266 @@ const drills = [
     videoUrl: "",
     resourceUrl: "https://www.soccercoachlab.com/soccer-drills-tags/pressing/u14",
     source: "Soccer Coach Lab — U14 Pressing/Possession Drills"
+  },
+
+
+  // ─── U13-19 EXPANSION BATCH 2 (added post-214) ──────────
+  // Sourced: Hobbit Football, SoccerXpert, Soccer-Coaches.com
+  // (Turek counter-pressing), AreaCopa, Soccer Coach Lab,
+  // Elite Soccer Coaching.
+  // Focus: transition play (both directions) and team defending
+  // — priority gaps for BU13/BU19 per coach's request.
+
+  {
+    name: "6-Second Counter-Press",
+    ages: ["U13+"],
+    skills: ["Defending", "Positioning"],
+    positions: ["All Players"],
+    skillLevel: "Advanced",
+    drillType: "Game/Play",
+    groupSize: "Full Team",
+    equipment: ["Goals Needed", "Pinnies"],
+    energyLevel: "High",
+    funFactor: 3,
+    description: "A small-sided game with one rule layered on top: the moment a team loses the ball, the three nearest players must sprint to press the new ball carrier immediately, while everyone else compresses into shape behind them. If the ball isn't won back within about 6 seconds, the whole team drops off and reorganizes instead of continuing to chase individually. This is the core habit behind counter-pressing (gegenpressing) — using the instant after a turnover, when the other team is least organized, instead of jogging back and conceding easy space.",
+    setup: "Small-sided field with goals, sized for the numbers you have (e.g. 6v6 or 7v7). Normal play otherwise. Coach calls out loud '1-2-3-4-5-6' after every turnover so players feel the actual window.",
+    duration: "15-20 min",
+    coachTip: "The nearest three players press — not just whoever is closest to goal. If the count reaches 6 and the ball isn't won, blow a whistle and have the whole team drop off together rather than half-pressing forever, which just leaves gaps everywhere.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://hobbit.football/guides/coaching-transitions-youth-football",
+    source: "Hobbit Football — Coaching Transitions in Youth Football (U10-U14)"
+  },
+
+  {
+    name: "1v1 Transition Duel",
+    ages: ["U13+"],
+    skills: ["Defending", "Dribbling", "Decision Making"],
+    positions: ["All Players"],
+    skillLevel: "Intermediate",
+    drillType: "Technical",
+    groupSize: "Small Group (3-5)",
+    equipment: ["Goals Needed"],
+    energyLevel: "High",
+    funFactor: 3,
+    description: "Two lines face a small goal. The first attacker takes on the first defender in a straight 1v1. The instant that duel ends — whether the attacker scores, the defender clears it, or the ball goes out — the player who was just defending immediately becomes the new attacker, taking on the next defender in line. There's no reset or breather between reps, so players have to flip their mindset from defend to attack (or the reverse) in real time, which is exactly the skill a real turnover demands.",
+    setup: "Small goal with two lines of players facing it, one acting as attackers and one as defenders to start. Continuous — no stopping between reps.",
+    duration: "10-12 min",
+    coachTip: "Watch for the mental lag — players who just defended often jog into the next rep instead of immediately thinking like an attacker. Call out 'go, go, go!' the instant a duel ends to keep the transition sharp.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://soccerxpert.com/drills/details/id1252",
+    source: "SoccerXpert — 1v1 Transition Drill"
+  },
+
+  {
+    name: "4v2 Counter-Press Rondo",
+    ages: ["U13+"],
+    skills: ["Defending", "Passing", "Possession", "Positioning"],
+    positions: ["All Players", "Midfielder"],
+    skillLevel: "Advanced",
+    drillType: "Technical",
+    groupSize: "Small Group (3-5)",
+    equipment: ["Cones Only"],
+    energyLevel: "High",
+    funFactor: 3,
+    description: "A 4v2 rondo in a small grid, but the moment the two defenders win the ball, the four possession players must instantly flip into defending mode and try to win it straight back — there's no reset. If the attacking four string together four consecutive passes, they move as a group into an adjacent grid and the drill continues there, simulating a team advancing after regaining the ball. This trains the immediate mental flip from possessing to pressing, which is the whole idea behind counter-pressing.",
+    setup: "Two adjacent small grids (roughly 10x10 yards each). 4 attackers plus 2 defenders in one grid. On a defender win, roles flip immediately and play continues without a coach reset. 4 consecutive passes moves the group to the next grid.",
+    duration: "12-15 min",
+    coachTip: "The value is entirely in what happens the instant possession changes — don't let players jog or wait for a whistle. The four who just lost the ball should be pressing within a step or two, not standing and watching.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://soccer-coaches.com/3-drills-improve-counter-pressing/",
+    source: "Soccer-Coaches.com — 3 Drills to Improve Counter-Pressing (adapted from Steven Turek)"
+  },
+
+  {
+    name: "Three-Zone Transition Press",
+    ages: ["U13+"],
+    skills: ["Defending", "Positioning", "Passing"],
+    positions: ["All Players", "Midfielder", "Defender"],
+    skillLevel: "Advanced",
+    drillType: "Game/Play",
+    groupSize: "Full Team",
+    equipment: ["Goals Needed", "Cones Only"],
+    energyLevel: "High",
+    funFactor: 2,
+    description: "A small-sided game (5v5 or 6v6) is played across a field divided into three zones. Whoever loses the ball has a strict 3-second window to press the new ball carrier before the rest of the team is required to shift and compress toward that zone. The zone lines make the compactness visible and easy to referee — if defenders are spread across more than one zone when the ball is lost, they're too stretched.",
+    setup: "40x20 yard field split into three equal zones with cone lines. Goals at each end. 5v5 or 6v6. Coach counts '1-2-3' out loud after every turnover.",
+    duration: "15 min",
+    coachTip: "This works because the defensive cover should already be in position before the ball is lost — not scrambling into place afterward. If a team is constantly stretched across all three zones, that's the real problem to fix, not the pressing itself.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://areacopa.com/en/blog/transition-play-youth-football",
+    source: "AreaCopa — Transition Play in Youth Football: 3 Seconds That Decide Games"
+  },
+
+  {
+    name: "Numbers-Up Transition Ladder",
+    ages: ["U13+"],
+    skills: ["Defending", "Passing", "Positioning", "Decision Making"],
+    positions: ["All Players", "Defender", "Midfielder"],
+    skillLevel: "Advanced",
+    drillType: "Technical",
+    groupSize: "Full Team",
+    equipment: ["Goals Needed", "Cones Only"],
+    energyLevel: "High",
+    funFactor: 3,
+    description: "Starts as a straightforward 2v1 toward goal, then immediately progresses to a 3v2 the moment that phase ends, using players who were waiting on the side. Every phase is a numerical advantage for the attackers, but the group size and speed of the next wave keeps increasing, forcing quicker decisions about when to pass versus carry the ball forward. Simulates the moment a team wins the ball with numbers up and has to capitalize before the defense recovers.",
+    setup: "Half field with a full-size goal and GK. Start with 2 attackers vs 1 defender. As soon as that phase ends (goal, save, or clearance), the next wave (3 attackers vs 2 defenders) starts immediately from a new group waiting at midfield.",
+    duration: "15 min",
+    coachTip: "The pace between phases is the coaching point — attackers need to recognize and use their numbers advantage fast, before the next wave of defenders arrives fresh. Rotate all players through both attacking and defending roles.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://www.soccercoachlab.com/soccer-drills-tags/transition",
+    source: "Soccer Coach Lab — Numerical Advantage Transition Sequence (2v1 to 3v2)"
+  },
+
+  {
+    name: "Six v Six Plus Six Neutrals",
+    ages: ["U13+"],
+    skills: ["Defending", "Passing", "Positioning", "Possession"],
+    positions: ["All Players", "Midfielder"],
+    skillLevel: "Advanced",
+    drillType: "Game/Play",
+    groupSize: "Full Team",
+    equipment: ["Goals Needed", "Pinnies"],
+    energyLevel: "High",
+    funFactor: 3,
+    description: "A 6v6 small-sided game with 6 neutral players positioned around the perimeter who always play for whichever team has the ball. Because possession can flip instantly through a neutral, both teams are constantly having to make the mental switch between attacking and defending mindsets — the neutrals make transitions happen far more often than a normal scrimmage, without the coach needing to manufacture turnovers artificially.",
+    setup: "Full or three-quarter field with goals. 6 core players per team plus 6 neutral players spread around the boundary who always support the team in possession. Normal game rules otherwise.",
+    duration: "18-20 min",
+    coachTip: "The neutrals should stay wide and available — they're an outlet, not a third team. Watch for the moment possession flips through a neutral pass and see how fast each team reorganizes.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://www.soccercoachlab.com/soccer-drills-tags/attacking-transition-defensive-transition",
+    source: "Soccer Coach Lab — 6v6 Plus 6 Neutrals Transition Game (Klopp-inspired)"
+  },
+
+  {
+    name: "Defend the Danger Zone",
+    ages: ["U13+"],
+    skills: ["Defending", "Positioning", "Goalkeeping"],
+    positions: ["All Players", "Defender", "Goalkeeper"],
+    skillLevel: "Advanced",
+    drillType: "Game/Play",
+    groupSize: "Full Team",
+    equipment: ["Goals Needed", "Cones Only"],
+    energyLevel: "High",
+    funFactor: 2,
+    description: "Three teams of four rotate through attacking and defending a single goal with a keeper. The defending team's specific job is closing down shooting and crossing angles in the danger zone around the box rather than just chasing the ball, and staying organized as a unit around the goalkeeper. Two teams play at a time while the third rests and provides service balls.",
+    setup: "Penalty area and surrounding space, full-size goal with GK. Three teams of 4 rotate: 2 active (1 attacking, 1 defending), 1 resting/serving. Restart with a new ball whenever play breaks down.",
+    duration: "15 min",
+    coachTip: "The coaching focus is angles, not effort — a defender sprinting everywhere but leaving a clear shooting or crossing lane open hasn't actually defended the danger zone. Ask: 'did you close the angle, or just close the distance?'",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://www.soccercoachlab.com/soccer-drills-tags/transition-defensive-offensive",
+    source: "Soccer Coach Lab — Danger Zone Management, 3 Teams of 4"
+  },
+
+  {
+    name: "Delay and Counter",
+    ages: ["U13+"],
+    skills: ["Defending", "Positioning", "Passing"],
+    positions: ["All Players", "Defender"],
+    skillLevel: "Advanced",
+    drillType: "Game/Play",
+    groupSize: "Full Team",
+    equipment: ["Goals Needed", "Cones Only"],
+    energyLevel: "High",
+    funFactor: 3,
+    description: "One team attacks a full-size goal while the other defends it. The defending team's job is purely to delay — protect the penalty area, prevent clean shots and crosses, and stay compact — for a set period before they're allowed to break out and counter-attack on two small mini-goals at the opposite end. This trains the patience and shape needed to survive sustained pressure before rewarding the team that stays organized with a fast-break opportunity.",
+    setup: "Full field or three-quarter field. Full-size goal with GK at the defending end, two small mini-goals at the other end. Defending team must survive a timed period (e.g. 45-60 seconds) before earning the right to counter on the mini-goals.",
+    duration: "18-20 min",
+    coachTip: "Defenders often want to counter-attack immediately — the discipline here is staying compact and patient until the moment actually arrives. Reward the team that defends well with real praise, not just the team that scores.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://www.soccercoachlab.com/soccer-drills-tags/transition",
+    source: "Soccer Coach Lab — Delay, Protect, and Counter-Attack Scenario"
+  },
+
+  {
+    name: "Eight v Four Counter-Press",
+    ages: ["U13+"],
+    skills: ["Defending", "Passing", "Possession", "Positioning"],
+    positions: ["All Players", "Midfielder"],
+    skillLevel: "Advanced",
+    drillType: "Technical",
+    groupSize: "Full Team",
+    equipment: ["Cones Only", "Pinnies"],
+    energyLevel: "High",
+    funFactor: 3,
+    description: "A group of 8 keeps possession against 4 pressing defenders, with 4 additional support players stationed on the boundary to help maintain the numbers advantage. The instant the 4 defenders win the ball, they must immediately try to keep it and counter, while the 8 (now without the ball) have to swarm back and press just as hard as the original defenders did. Based on a real professional counter-pressing exercise, it drills the specific habit of closing space the moment possession is lost rather than watching the ball go.",
+    setup: "30x30 yard grid. 8 possession players plus 4 boundary support players vs 4 pressing defenders inside. On a defender win, roles reverse immediately — no reset.",
+    duration: "15 min",
+    coachTip: "This is a demanding, high-tempo drill — the coaching moment is entirely in the first few seconds after any turnover. Cue: 'the ball is lost — where's the nearest three?' Don't let it slow into a normal possession game.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://www.soccercoachlab.com/soccer-drills-tags/counter-pressing",
+    source: "Soccer Coach Lab — 8v4 Counter-Pressing Exercise"
+  },
+
+  {
+    name: "Vertical Press Zones (9v9)",
+    ages: ["U13+"],
+    skills: ["Defending", "Passing", "Positioning"],
+    positions: ["All Players", "Midfielder", "Defender"],
+    skillLevel: "Advanced",
+    drillType: "Scrimmage",
+    groupSize: "Full Team",
+    equipment: ["Goals Needed", "Cones Only"],
+    energyLevel: "High",
+    funFactor: 2,
+    description: "A game played across marked zones on a wider field, designed to work on midfield pressing and staying compact centrally while still being able to play forward under pressure. Teams are rewarded for winning the ball in the central zone and immediately playing a vertical pass rather than resetting sideways, which trains the exact instinct a well-organized press is trying to create.",
+    setup: "Wide field split into thirds with cone lines. Goals at each end. Play in numbers appropriate to your group (e.g. 7v7 or 8v8). Bonus point for a forward pass completed within 2 touches of winning the ball centrally.",
+    duration: "18-20 min",
+    coachTip: "Watch the habit right after a central win — most youth players' instinct is to play safe and sideways. This game specifically rewards the brave forward option, which is what a real press is trying to set up.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://www.soccercoachlab.com/soccer-drills-tags/transition",
+    source: "Soccer Coach Lab — Vertical Pressing in Zones"
+  },
+
+  {
+    name: "Rondo Reaction Warm-Up",
+    ages: ["U13+"],
+    skills: ["Defending", "Passing", "Possession", "Decision Making"],
+    positions: ["All Players", "Midfielder"],
+    skillLevel: "Intermediate",
+    drillType: "Warm-Up",
+    groupSize: "Small Group (3-5)",
+    equipment: ["Cones Only"],
+    energyLevel: "Medium",
+    funFactor: 2,
+    description: "A standard rondo (keep-away) but run as a series of quick sequences specifically to prime the immediate reaction to losing the ball — the moment a defender wins it, the group that just had possession must react instantly to try to win it back rather than jogging or complaining. Works well as the opening activity of a session built around counter-pressing, since it gets the right mindset warmed up before the main practice.",
+    setup: "Small grid, standard rondo numbers (e.g. 5v2 or 6v3). Run in short, sharp sequences rather than one long continuous rondo.",
+    duration: "10-12 min",
+    coachTip: "Use this specifically as the warm-up before a session focused on counter-pressing — it sets the tone for the rest of practice. The habit you're building is instant reaction, not slow acceptance of losing the ball.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://www.soccercoachlab.com/soccer-drills-tags/counter-pressing",
+    source: "Soccer Coach Lab — Rondo Reaction Sequences for Counter-Pressing"
+  },
+
+  {
+    name: "Recovery Race 1v1",
+    ages: ["U13+"],
+    skills: ["Defending", "Speed", "Dribbling"],
+    positions: ["Defender", "All Players"],
+    skillLevel: "Intermediate",
+    drillType: "Technical",
+    groupSize: "Small Group (3-5)",
+    equipment: ["Cones Only"],
+    energyLevel: "High",
+    funFactor: 3,
+    description: "Two teams of six face off across a 10x10 yard grid, split so half of each team starts on opposite cones. One team starts defending — a single defender enters the middle to try to stop the attacker. The attacker tries to dribble across and beat the defender 1v1. If they make it across, they pass to a teammate waiting on the far cone, who immediately becomes the next attacker trying to beat a new defender coming the other way. Trains quick recovery and re-engaging defensively right after a duel ends.",
+    setup: "10x10 yard grid. Two teams of six, split with half on each side. One defender active at a time from the defending team. Attacker dribbles across, passes to a teammate on the far side to continue, defender rotates. Run in 3-minute blocks with rest between.",
+    duration: "12-15 min (3-min blocks with rest)",
+    coachTip: "The defender who just got beaten has to immediately reset and think about the next duel, not dwell on losing the last one. That quick mental reset is the actual skill being trained here, more than the 1v1 itself.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://elitesoccercoaching.net/defending/counter-pressing",
+    source: "Elite Soccer Coaching — Counter-Pressing Recovery Race"
   },
 
 
