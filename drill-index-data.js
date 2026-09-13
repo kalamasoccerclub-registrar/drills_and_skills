@@ -2,8 +2,8 @@
 // KALAMA SOCCER CLUB — DRILL INDEX DATA
 // Feeds the Drill Finder filter page (Option A — smart filter).
 // Update this file with every new drill as age pages are built.
-// Last updated: Session 17 FINAL — 200 drills; U13 age tags normalized; all sources complete; CLOSED for new entries
-// Total drills: 200
+// Last updated: U13-19 Expansion Batch 1 — 214 drills; reopened for U13+/U19 catch-up build
+// Total drills: 214
 // Sources in file:
 //   MA Youth Soccer U6 (10 weeks) — 30 drills
 //   MA Youth Soccer U8 (12 weeks) — 21 drills
@@ -16,7 +16,9 @@
 //   Soccer Coach Weekly Batch 3C (arrival activities) — 7 drills
 //   Soccer Coach Weekly Batch 3D (heading/specialist) — 16 drills
 //   Original U5/U6/U7 (various sources) — 9 drills
-// ─── PENDING: U11/U12 drills, U13–U19 drills ───────────────
+// ─── PENDING: continued U13-19 expansion (batches 2+), U11/U12 top-off ───
+// Batch 1 added 14 drills: 4 pure 1v1 defending, 4 possession-under-pressure
+// small-sided games, 6 passing/first-touch technical warm-ups.
 // ============================================================
 
 const drills = [
@@ -4269,6 +4271,307 @@ const drills = [
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U13+ Fall 2020 Week 12 (Spanish)"
   },
+
+  // ─── U13-19 EXPANSION BATCH 1 (added post-200) ──────────
+  // Sourced: SoccerXpert U14-U16 collection, Soccer Coach Weekly
+  // 1v1 defending sessions, LevelUp Soccer, Soccer Coach Lab.
+  // Focus: ball control/first touch, passing & possession under
+  // pressure, 1v1 defending — priority gaps for BU13/BU19.
+
+  {
+    name: "Narrow Channel Jockey",
+    ages: ["U13+"],
+    skills: ["Defending"],
+    positions: ["Defender", "All Players"],
+    skillLevel: "Beginner",
+    drillType: "Technical",
+    groupSize: "Pairs",
+    equipment: ["Cones Only"],
+    energyLevel: "Medium",
+    funFactor: 2,
+    description: "A 4-5 yard wide, 15-yard long coned channel with a small goal or end line at each end. The attacker starts with the ball at one end and tries to dribble the length of the channel to score. The defender starts at the other end and must stop them using jockeying footwork only — no lunging tackles allowed. The narrow width means one mistimed dive and the attacker is through, so the defender is forced to stay patient, stay side-on, and shuffle backward under control instead of committing early.",
+    setup: "Cone off a channel 4-5 yards wide by 15 yards long. Small goal or end-zone target at each end. One ball per pair.",
+    duration: "8-10 min (30 sec reps, switch roles)",
+    coachTip: "Cue: 'Stay on your toes, show them the sideline.' The defender's job here isn't to win the ball — it's to slow the attacker down and force a mistake. Praise good jockeying even when the attacker still scores.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://athletesuntapped.com/blog/soccer-jockey-technique-defenders/",
+    source: "Athletes Untapped — Teaching Soccer Defenders Proper Jockey Technique"
+  },
+
+  {
+    name: "Jockey Command Calls",
+    ages: ["U13+"],
+    skills: ["Defending"],
+    positions: ["Defender", "All Players"],
+    skillLevel: "Intermediate",
+    drillType: "Technical",
+    groupSize: "Individual",
+    equipment: ["Cones Only"],
+    energyLevel: "Medium",
+    funFactor: 2,
+    description: "Players face a mannequin, cone, or partner standing in for an attacker and react to the coach's numbered calls: 1 = jockey (approach under control and get goal-side), 2 = show right (arc the approach to force the attacker onto their right foot), 3 = show left (force onto their left foot), 4 = stop-turn (close down fast and get set to change direction). Reinforces the habit of reading a call and adjusting body shape instantly, which is the same decision defenders have to make on the fly in a real 1v1.",
+    setup: "One cone/mannequin target per player, spread across the width of a grid. Coach stands where all players can hear the calls.",
+    duration: "10 min",
+    coachTip: "Run it slow the first few reps so players learn the four positions cleanly, then speed up the calls. The goal is that the correct body shape becomes automatic before you ever add a live attacker.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://www.soccercoachweekly.net/drills-and-games/drills/1v1-defending-technique",
+    source: "Soccer Coach Weekly — 1v1 Defending Technique"
+  },
+
+  {
+    name: "Delay the Play 2v2",
+    ages: ["U13+"],
+    skills: ["Defending", "Positioning"],
+    positions: ["Defender", "All Players"],
+    skillLevel: "Advanced",
+    drillType: "Game/Play",
+    groupSize: "Small Group (3-5)",
+    equipment: ["Goals Needed", "Pinnies"],
+    energyLevel: "High",
+    funFactor: 3,
+    description: "A 20x10 yard grid with a target goal at each end. Two attackers take on a single defender in a 2v1 — but after every attack, whoever last touched the ball must sprint and touch the opposite goal before they're allowed to recover and help defend, meaning the new defending pair starts down a player. This forces the lone defender to delay rather than commit, buying time for their teammate to get back instead of diving in and getting beaten immediately.",
+    setup: "20x10 yard area, target goal at each end, cones and bibs. Coach restarts every attack by playing the ball in.",
+    duration: "12-15 min",
+    coachTip: "Watch for over-commitment — a defender who dives in immediately gets beaten every time here. Coach the words 'delay, don't dive' and reward defenders who force a mistake by staying patient.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://www.soccercoachweekly.net/drills-and-games/practice-delay-the-play-1v1",
+    source: "Soccer Coach Weekly — Delay the Play 1v1"
+  },
+
+  {
+    name: "1v1 Reaction Gate Challenge",
+    ages: ["U13+"],
+    skills: ["Dribbling", "Defending"],
+    positions: ["All Players"],
+    skillLevel: "Intermediate",
+    drillType: "Technical",
+    groupSize: "Pairs",
+    equipment: ["Cones Only"],
+    energyLevel: "Medium",
+    funFactor: 3,
+    description: "Two small gate goals are set up a short distance apart, facing opposite directions. On the coach's signal, the attacker tries to dribble through either gate while the defender reacts and closes it down. Because the attacker has two options and the defender doesn't know which one is coming, it trains quick decision-making and reaction speed for the defender and rewards deception and change of pace for the attacker.",
+    setup: "Two cone gates roughly 10x10 yards apart, facing different directions. One ball per pair.",
+    duration: "10 min",
+    coachTip: "Rotate attacker/defender every 3-4 reps so both roles get worked evenly. For defenders, the coaching point is anticipation — watch the hips, not the ball.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://soccerxpert.com/drills/details/1v1-gate-challenge",
+    source: "SoccerXpert — 1v1 Reaction Gate Challenge"
+  },
+
+  {
+    name: "1v1 Corner Escape",
+    ages: ["U13+"],
+    skills: ["Ball Control", "Receiving", "Dribbling"],
+    positions: ["All Players"],
+    skillLevel: "Intermediate",
+    drillType: "Technical",
+    groupSize: "Small Group (3-5)",
+    equipment: ["Cones Only"],
+    energyLevel: "Medium",
+    funFactor: 3,
+    description: "In a tight 6x6 yard grid, a player receives a pass with a defender closing them down from behind, and must use their first touch to escape into open space rather than getting pinned in the corner. Builds the habit of checking shoulders before the ball arrives, taking a touch away from pressure instead of square to it, and shielding the ball on the escape.",
+    setup: "6x6 yard grid marked with cones. Server plays the ball in from outside; defender pressures from behind as it arrives.",
+    duration: "8-10 min",
+    coachTip: "Ask players 'which shoulder did you check before the ball got there?' — most players who get stuck in the corner never looked before receiving. That's the actual fix, not just faster feet.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://soccerxpert.com/drills/details/1v1-escape-the-corner",
+    source: "SoccerXpert — 1v1 Corner Escape"
+  },
+
+  {
+    name: "3v3 Four-Goal Funino",
+    ages: ["U13+"],
+    skills: ["Passing", "Possession", "Decision Making"],
+    positions: ["All Players"],
+    skillLevel: "Intermediate",
+    drillType: "Game/Play",
+    groupSize: "Small Group (3-5)",
+    equipment: ["Goals Needed"],
+    energyLevel: "High",
+    funFactor: 4,
+    description: "A 3v3 game with two small goals to attack at each end instead of one, played with no goalkeepers. Because there are two scoring targets on both ends, attackers constantly have to recognize which goal is open and switch the point of attack, while defenders have to cover both options instead of guarding a single goal. It's a fast way to force possession-under-pressure decisions without any stoppages.",
+    setup: "20x30 yard grid. Two small goals (or cone gates) at each end, no keepers. 3v3, plus subs rotating in.",
+    duration: "20 min",
+    coachTip: "Don't over-coach this one — let the two-goal problem do the teaching. If a team keeps getting stuck attacking the covered goal, pause and ask them what they saw instead of telling them the answer.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://soccerxpert.com/drills/details/funino-3v3-4-goal-game",
+    source: "SoccerXpert — 3v3 4-Goal Small-Sided Game (Funino)"
+  },
+
+  {
+    name: "4-Goal Possession Game",
+    ages: ["U13+"],
+    skills: ["Passing", "Possession", "Positioning"],
+    positions: ["All Players"],
+    skillLevel: "Intermediate",
+    drillType: "Game/Play",
+    groupSize: "Full Team",
+    equipment: ["Goals Needed"],
+    energyLevel: "High",
+    funFactor: 4,
+    description: "Four small goals are placed around the perimeter of a larger grid — two per team, on opposite sides. Teams can score in either of their two goals, which forces constant switching of the point of attack and stretches the defending team across a wider space. Since defenders can't simply pack in front of one goal, it directly trains the passing range and patience needed to break down an organized low block.",
+    setup: "25x35 yard grid with 4 small goals placed at the corners/sides (2 per team, opposite ends). No keepers needed.",
+    duration: "20 min",
+    coachTip: "Watch for teams who never switch the ball to the far side — that's the exact habit this game is meant to break. Freeze play and ask 'where was the space?' if they force it into a crowd repeatedly.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://soccerxpert.com/drills/details/4-goal-game",
+    source: "SoccerXpert — 4-Goal Game"
+  },
+
+  {
+    name: "Y-Passing Open Body Drill",
+    ages: ["U13+"],
+    skills: ["Passing", "Receiving", "First Touch"],
+    positions: ["All Players"],
+    skillLevel: "Beginner",
+    drillType: "Warm-Up",
+    groupSize: "Small Group (3-5)",
+    equipment: ["Balls Only"],
+    energyLevel: "Low",
+    funFactor: 2,
+    description: "Players are arranged in a Y-shape with a ball starting at the base. Each player must open their hips and body before the pass arrives so they can receive facing the direction they need to play next, then pass to the next player in the pattern and rotate positions. Repetition builds the habit of receiving on the correct half-turn instead of square-on, which is one of the most common technical gaps at this age.",
+    setup: "Y-shaped cone layout, roughly 15x20 yards, 3 stations with a player at each plus one moving through the middle.",
+    duration: "10 min",
+    coachTip: "The coaching point is the body shape before the ball arrives, not the pass itself. Freeze players mid-drill and check their shoulder/hip angle if they're receiving square to the passer.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://soccerxpert.com/drills/details/y-passing-drill-variation-1",
+    source: "SoccerXpert — Y Passing Drill, Variation 1"
+  },
+
+  {
+    name: "Y-Passing One-Two Combination",
+    ages: ["U13+"],
+    skills: ["Passing", "Receiving", "Movement"],
+    positions: ["All Players"],
+    skillLevel: "Intermediate",
+    drillType: "Warm-Up",
+    groupSize: "Small Group (3-5)",
+    equipment: ["Balls Only"],
+    energyLevel: "Medium",
+    funFactor: 2,
+    description: "Building on the basic Y-passing pattern, players now add a one-two (wall pass) combination into the sequence before continuing to rotate. This adds a layer of movement off the ball and communication timing — the passer has to sprint into the return pass rather than admire their own pass, which is the exact habit that turns a simple give-and-go into a game-realistic combination.",
+    setup: "Same Y-shaped cone layout as the base drill, 15x20 yards. Add a second cone marking the one-two return run.",
+    duration: "10 min",
+    coachTip: "Cue: 'Pass and move, don't pass and watch.' Most players stand still admiring a good pass — that's the moment to remind them the run is half the combination.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://soccerxpert.com/drills/details/y-passing-drill-variation-2",
+    source: "SoccerXpert — Y Passing Drill, Variation 2"
+  },
+
+  {
+    name: "Six-Cone Passing Circuit",
+    ages: ["U13+"],
+    skills: ["Passing", "Receiving", "Movement"],
+    positions: ["All Players"],
+    skillLevel: "Intermediate",
+    drillType: "Warm-Up",
+    groupSize: "Small Group (3-5)",
+    equipment: ["Balls Only", "Cones Only"],
+    energyLevel: "Medium",
+    funFactor: 2,
+    description: "Six cones are arranged around a grid, each with a player. After passing, the player follows their pass and sprints to a different cone rather than staying put, so the circuit constantly changes and every player has to stay alert to where the next pass is coming from. Builds passing accuracy and the habit of moving with purpose immediately after releasing the ball.",
+    setup: "Six cones arranged in a hexagon or circle, roughly 15x25 yards. One player per cone, one ball to start.",
+    duration: "12-15 min",
+    coachTip: "Once players get comfortable, add a rule that the pass must be one-touch to raise the tempo and force earlier decision-making.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://soccerxpert.com/drills/details/six-cone-passing-drill",
+    source: "SoccerXpert — Six-Cone Passing Drill"
+  },
+
+  {
+    name: "Four-Cone Passing Foundation",
+    ages: ["U13+"],
+    skills: ["Passing", "Receiving"],
+    positions: ["All Players"],
+    skillLevel: "Beginner",
+    drillType: "Warm-Up",
+    groupSize: "Small Group (3-5)",
+    equipment: ["Balls Only", "Cones Only"],
+    energyLevel: "Low",
+    funFactor: 2,
+    description: "Three players work a simple square passing pattern anchored by four cones, focusing purely on clean passing technique and the movement into space right after the pass. This is a deliberately low-pressure starting point — good for players who need the fundamentals reinforced before layering on pressure or combination play.",
+    setup: "Four cones in a 12x12 yard square. Three players rotating through the pattern.",
+    duration: "8-10 min",
+    coachTip: "Use this as your first warm-up rep of the session for players who need extra passing repetition — it's simple by design. Build up speed only once the technique looks clean.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://soccerxpert.com/drills/details/four-cone-passing-drill",
+    source: "SoccerXpert — Four-Cone Passing Drill"
+  },
+
+  {
+    name: "One-Touch Combination Series",
+    ages: ["U13+"],
+    skills: ["Passing", "Receiving", "First Touch"],
+    positions: ["All Players"],
+    skillLevel: "Advanced",
+    drillType: "Warm-Up",
+    groupSize: "Small Group (3-5)",
+    equipment: ["Balls Only", "Cones Only"],
+    energyLevel: "Medium",
+    funFactor: 3,
+    description: "A passing pattern built around one-touch play and a light dribble, requiring players to combine quick one-touch passes with movement off the ball rather than settling the ball every time. This raises the technical bar past basic passing drills and starts training the speed of play players need once they hit competitive 11v11.",
+    setup: "20x20 yard grid with cone stations marking the pattern. 6+ players rotating through positions.",
+    duration: "15 min",
+    coachTip: "This one is genuinely hard for players still catching up technically — it's fine to slow it to two-touch first and only push to full one-touch once the pattern is clean.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://soccerxpert.com/drills/details/one-touch-passing-combination-series-1",
+    source: "SoccerXpert — One-Touch Passing Combination, Series 1"
+  },
+
+  {
+    name: "Pressure Cooker Possession",
+    ages: ["U13+"],
+    skills: ["Possession", "Passing", "Decision Making"],
+    positions: ["All Players"],
+    skillLevel: "Advanced",
+    drillType: "Game/Play",
+    groupSize: "Small Group (3-5)",
+    equipment: ["Pinnies"],
+    energyLevel: "High",
+    funFactor: 3,
+    description: "A 5v5 possession game in a tight grid where every 60 seconds a brand-new ball is served in, immediately resetting the intensity and forcing an instant re-read of who's open. Teams count consecutive completed passes, with the team reaching the highest streak winning. The tight space and constant resets are what make this specifically a possession-under-pressure drill rather than a comfortable rondo.",
+    setup: "Small grid sized for 5v5 (roughly 25x25 yards). Extra balls with the coach ready to serve a new one in every 60 seconds.",
+    duration: "12-15 min",
+    coachTip: "The reset is the whole point — don't let a team catch their breath. Call out the running pass count so players feel the pressure to keep the streak alive.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://levelup.soccer/learn/drills-u14",
+    source: "LevelUp Soccer — U14 Training Guide, Pressure Cooker Possession"
+  },
+
+  {
+    name: "Keeper-to-Keeper Possession",
+    ages: ["U13+"],
+    skills: ["Passing", "Possession", "Positioning"],
+    positions: ["All Players", "Goalkeeper"],
+    skillLevel: "Advanced",
+    drillType: "Game/Play",
+    groupSize: "Full Team",
+    equipment: ["Goals Needed"],
+    energyLevel: "High",
+    funFactor: 3,
+    description: "A possession game where the objective is to connect a pass all the way from one goalkeeper to the other, with side-zone target players available to help the buildup. This prioritizes finding the forward pass over safe sideways circulation, teaching teams to actually progress the ball through pressure instead of just keeping possession for its own sake.",
+    setup: "Full or three-quarter field with a goalkeeper at each end and two side-zone target players. 4v4 in the middle plus keepers and targets.",
+    duration: "15-20 min",
+    coachTip: "Score a point every time the ball travels keeper-to-keeper — this rewards progressive passing, not just possession. Coach players to look forward first, sideways second.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://www.soccercoachlab.com/soccer-drills-tags/pressing/u14",
+    source: "Soccer Coach Lab — U14 Pressing/Possession Drills"
+  },
+
 
 ];
 
