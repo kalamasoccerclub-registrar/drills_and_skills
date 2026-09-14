@@ -2,8 +2,8 @@
 // KALAMA SOCCER CLUB — DRILL INDEX DATA
 // Feeds the Drill Finder filter page (Option A — smart filter).
 // Update this file with every new drill as age pages are built.
-// Last updated: U13-19 Expansion Batch 2 — 226 drills; transition play + team defending
-// Total drills: 226
+// Last updated: U13-19 individual additions — 229 drills; matched from coach-provided sources
+// Total drills: 229
 // Sources in file:
 //   MA Youth Soccer U6 (10 weeks) — 30 drills
 //   MA Youth Soccer U8 (12 weeks) — 21 drills
@@ -4833,6 +4833,75 @@ const drills = [
     videoUrl: "",
     resourceUrl: "https://elitesoccercoaching.net/defending/counter-pressing",
     source: "Elite Soccer Coaching — Counter-Pressing Recovery Race"
+  },
+
+
+  // ─── U13-19 ADDITIONS (individual requests) ─────────────
+  // Sourced from specific videos/citations the coach found and
+  // asked to have matched and added: SoccerXpert, Soccer Coach
+  // Weekly, Modern Soccer Coach.
+
+  {
+    name: "1v1 Three-Grid Gauntlet",
+    ages: ["U13+"],
+    skills: ["Dribbling", "Defending", "Speed"],
+    positions: ["All Players"],
+    skillLevel: "Advanced",
+    drillType: "Technical",
+    groupSize: "Full Team",
+    equipment: ["Cones Only"],
+    energyLevel: "High",
+    funFactor: 3,
+    description: "Three coned grids are set up in a row. A defender starts in each of the three grids. The attacker receives a pass from the coach and must dribble through all three grids in sequence, beating a different defender in each one. If any defender wins the ball or knocks it out of play, the attacker returns to the back of the attacking line. Every time an attacker succeeds or fails, the defenders rotate forward one grid, and the defender who was in the first grid goes back to the defending line — keeping everyone fresh and everyone getting reps against a new opponent each time.",
+    setup: "Three coned grids in a row (roughly 10x10 yards each works well, adjust to your space). One defender starts in each grid. Attacking line and defending line at opposite ends, coach with balls feeds the first attacker in.",
+    duration: "15 min",
+    coachTip: "Start defenders at reduced intensity (50%) while attackers get comfortable with the sequence, then ramp up pressure once the pattern is understood. Make sure every player gets time in both lines — this drill is demanding for the attacker, who has to win three separate battles in a row.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://www.soccerxpert.com/drills/details/1v1-three-grid-attacking-drill",
+    source: "SoccerXpert — 1v1 Three Grid Gauntlet Attacking Drill"
+  },
+
+  {
+    name: "Pressure Cover Balance Trios",
+    ages: ["U13+"],
+    skills: ["Defending", "Positioning", "Passing"],
+    positions: ["All Players", "Defender", "Midfielder"],
+    skillLevel: "Advanced",
+    drillType: "Game/Play",
+    groupSize: "Small Group (3-5)",
+    equipment: ["Goals Needed", "Cones Only", "Pinnies"],
+    energyLevel: "High",
+    funFactor: 2,
+    description: "A 40x20 yard area is divided into four 10-yard zones, and every player must stay in their own zone. Two trios (three vs three) face off: the team in possession tries to move the ball through the zones to a teammate, scoring a point each time it gets through cleanly. The defending trio's job is to move as one unit — one player presses the ball, a second covers behind them in case the presser is beaten, and a third balances across to close the gap on the far side, ready to become the next presser or cover player if the ball switches. First team to 10 points wins, then groups rotate.",
+    setup: "40x20 yard area marked into four 10-yard zones with cones. Two trios (3v3) per group, bibs to distinguish teams. Coach plays in a new ball whenever one goes out. Run several groups simultaneously if you have the numbers.",
+    duration: "15-18 min",
+    coachTip: "The core teaching point is the unit moving together, not just the one player on the ball. Watch for gaps down the outside — that's almost always where the point gets conceded, because the defending trio squeezed too tight centrally instead of staying spread to cover the full width of their zone.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://www.soccercoachweekly.net/drills-and-games/drills/press-cover-balance1",
+    source: "Soccer Coach Weekly — Pressuring the Opposition to Regain the Ball (Press/Cover/Balance)"
+  },
+
+  {
+    name: "Fundamental 1v1 Press Mechanics",
+    ages: ["U13+"],
+    skills: ["Defending"],
+    positions: ["Defender", "All Players"],
+    skillLevel: "Intermediate",
+    drillType: "Technical",
+    groupSize: "Pairs",
+    equipment: ["Cones Only"],
+    energyLevel: "Medium",
+    funFactor: 2,
+    description: "A straight 10-yard wide by 15-yard deep corridor with an attacker line at one end and a defender line at the other. A server passes the ball into the first attacker, who advances toward the defender's end. The first defender in line sprints out to close the attacker down. This is the foundational rep for teaching the body mechanics of pressing before ever asking for a coordinated team press. Progression: once the straight 1v1 is solid, add a second attacker as a decoy option making a run up the opposite side of the corridor, forcing the defender to also account for a passing option while they close down.",
+    setup: "10 yard wide by 15 yard deep corridor marked with cones. Attacker line at one end, defender line at the other. Server (coach or player) feeds the ball into each attacker as they step forward.",
+    duration: "10-12 min",
+    coachTip: "The approach: sprint to close about 80% of the distance, then decelerate into short, choppy steps for the final approach so you arrive under control rather than flying past. Body shape: side-on, never flat-footed, knees bent, low center of gravity, showing the attacker toward a specific side rather than staying square. Distance check: if you can touch the attacker with an outstretched arm, you're close enough to react but far enough that they can't just turn past you. Patience: don't lunge or dive in — wait for a heavy touch or a mistake before committing to the tackle.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://www.youtube.com/watch?v=Hh-P-BF0VAM",
+    source: "Modern Soccer Coach — Designing Defending Drills at Youth Levels"
   },
 
 
