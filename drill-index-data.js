@@ -2,8 +2,8 @@
 // KALAMA SOCCER CLUB — DRILL INDEX DATA
 // Feeds the Drill Finder filter page (Option A — smart filter).
 // Update this file with every new drill as age pages are built.
-// Last updated: U13-19 individual additions — 229 drills; matched from coach-provided sources
-// Total drills: 229
+// Last updated: U13-19 individual additions — 230 drills; matched from coach-provided sources
+// Total drills: 230
 // Sources in file:
 //   MA Youth Soccer U6 (10 weeks) — 30 drills
 //   MA Youth Soccer U8 (12 weeks) — 21 drills
@@ -4902,6 +4902,30 @@ const drills = [
     videoUrl: "",
     resourceUrl: "https://www.youtube.com/watch?v=Hh-P-BF0VAM",
     source: "Modern Soccer Coach — Designing Defending Drills at Youth Levels"
+  },
+
+
+  // ─── U13-19 ADDITIONS (individual requests, cont.) ──────
+
+  {
+    name: "Full-Team High Press Progression",
+    ages: ["U13+"],
+    skills: ["Defending", "Positioning"],
+    positions: ["All Players", "Defender", "Midfielder", "Striker"],
+    skillLevel: "Advanced",
+    drillType: "Game/Play",
+    groupSize: "Full Team",
+    equipment: ["Goals Needed", "Cones Only"],
+    energyLevel: "High",
+    funFactor: 2,
+    description: "A four-phase progression that builds a team's pressing shape from a small technical drill up to a full 11v11 game. Phase 1: a back four plus goalkeeper practice keeping a pressing line's shape while a front line shuffles and slides in relation to the ball, without tackling — after a minute the roles swap. Phase 2: an 8v6 game where the defending eight are fed by their keeper and must move the ball into one of three small goals, while the attacking six try to win it and score in the big goal, teaching the front two to compress and give their midfield time to get into position. Phase 3: extends to 10v10 plus keeper on a longer pitch, both sides now attacking full-size goals, forcing players to manage distance between lines as well as width. Phase 4: the full 11v11 game, with the goalkeeper again starting play — the coaching focus shifts to identifying who triggers the press (it could be any player), keeping the pressing line compact while shuffling, and reacting with a recovery run if the first press is beaten.",
+    setup: "Scales from a half pitch (Phase 1) up to a full pitch (Phase 4), extending roughly 20 yards in length at each phase. Needs a full set of balls, cones, and both full-size and small target goals for the middle phases. Best run as a full team session moving through all four phases in one practice, roughly 10-30 minutes per phase depending on squad size.",
+    duration: "60-80 min for the full progression (10 / 20 / 20 / 30 min per phase)",
+    coachTip: "The key coaching points hold across every phase: press, keep team shape, stay compact on the same side as the ball, and keep the spacing inside each line to a distance that can be closed in two strides. Defenders should stand side-on, not square, so they can react to a ball played in behind. If the first press gets beaten, look for the recovery run into a covering position rather than a flat-out chase.",
+    diagramUrl: "",
+    videoUrl: "",
+    resourceUrl: "https://elitesoccercoaching.net/defending/simple-pressing-as-a-team",
+    source: "Elite Soccer — Sean Dyche, Simple Pressing as a Team"
   },
 
 
