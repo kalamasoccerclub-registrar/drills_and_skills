@@ -255,7 +255,7 @@ const drills = [
     setup: "15W x 20L grid, cone goal in each corner. Coach in center with all balls. Two teams on either side.",
     duration: "8 min (16 intervals: 10 sec play, 20 sec rest)",
     coachTip: "Keep it at 1v1 until most players have scored at least once. Play the ball closer to a struggling player.",
-    diagramUrl: "diagrams/soccer-combat.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U6 Week 1"
@@ -759,7 +759,7 @@ const drills = [
     setup: "15W x 20L grid. Pairs spread across field. One ball per pair.",
     duration: "7 min (7 intervals: 30 sec play, 30 sec rest)",
     coachTip: "Find an opening all the way to the line then push the ball in front so you can run after it.",
-    diagramUrl: "diagrams/1v1-dribble-challenge.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U6 Week 9"
@@ -929,7 +929,7 @@ const drills = [
     setup: "15W x 25L field with 5-yard end zones on each end. 2v2 active.",
     duration: "20 min (10 intervals: 1 min play, 1 min rest)",
     coachTip: "Encourage 2v1 combinations: draw the defender then pass.",
-    diagramUrl: "diagrams/2v2-to-end-zones.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U8 Week 4"
@@ -971,7 +971,7 @@ const drills = [
     setup: "13W x 20L field (inside 25W x 35L), goal on each end line. Players in 2 groups at opposite corners.",
     duration: "18 min (18 intervals: 30 sec play, 30 sec rest)",
     coachTip: "Block the goal and steal the ball simultaneously: bend your run toward the goal first.",
-    diagramUrl: "diagrams/4-corner-shooting-defending.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U8 Week 6"
@@ -992,7 +992,7 @@ const drills = [
     setup: "25W x 35L field, goal on one end line, 3-yard end zone on the other. 3v3.",
     duration: "18 min (3 intervals: 4 min play, 2 min rest)",
     coachTip: "Closest defender to ball: step to it and pressure. Bend your run so you block the goal on your way to the ball.",
-    diagramUrl: "diagrams/3v3-defend-your-goal.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U8 Week 7"
@@ -1034,7 +1034,7 @@ const drills = [
     setup: "15W x 25L grid, 3 small goals on one end line, 1 goal on other. 2v2. Coach outside center line.",
     duration: "18 min (9 intervals: 1 min play, 1 min rest)",
     coachTip: "The goal closest to the ball is most dangerous — one defender block it, the other pressure the ball.",
-    diagramUrl: "diagrams/2v2-defend-3-goals-counter-to-1.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U8 Week 9"
@@ -1055,7 +1055,7 @@ const drills = [
     setup: "25W x 35L field divided into thirds. Goal on each end line. 1 defender per zone. Attacking pairs each have a shared ball.",
     duration: "18 min (9 intervals: 1 min play, 1 min rest)",
     coachTip: "Defenders: bend your run to block the goal THEN move toward the ball. Force attackers to the sides.",
-    diagramUrl: "diagrams/defend-each-zone.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U8 Week 10"
@@ -1076,7 +1076,7 @@ const drills = [
     setup: "15W x 25L grid, goal near each corner on end lines. Coach at midfield with all balls. 2 teams on sidelines.",
     duration: "18 min (18 intervals: 30 sec play, 30 sec rest)",
     coachTip: "Team of 2 must cooperate — one pressures, one covers the goal.",
-    diagramUrl: "diagrams/2v1-to-side-goals-reloading.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U8 Week 11"
@@ -1246,7 +1246,7 @@ const drills = [
     setup: "24W x 35L area. Regular goal one end, end zone other end. Build-out line. 4 Blue defenders vs 5 Red. Rotate every interval.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "ALL coaching directed at the defending (Blue) team. Ask: 'How can we block the way forward?' Answer: get a defender between the ball and goal. Key words: Block the way, Hassle, Help.",
-    diagramUrl: "diagrams/defending-4v5-pressure-end-zone.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U9-U10 Week 7 (2020)"
@@ -1267,7 +1267,7 @@ const drills = [
     setup: "40W x 30L area. Regular goal one end, two 10-yard dribbling gates other end. Build-out line. 4 Blue vs 5 Red. Rotate every interval.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "Key concept: make it compact AND stay compact. Ask: 'When is a good time to hassle the attacker?' Answer: when they have a bad first touch or receive facing their own goal. Key words: Block the opening, Hassle, Work together, Help.",
-    diagramUrl: "diagrams/defending-4v5-compact-dribbling-gates.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U9-U10 Week 8 (2020)"
@@ -1288,7 +1288,7 @@ const drills = [
     setup: "Two 19W x 25L fields inside 7v7 field. Small goal each end. 3v3. Kick-ins or dribble-ins when ball goes out.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "Ask: 'Who shields the goal?' Answer: closest defender gets between ball and goal. 'How do we compress?' Answer: all others get compact behind that defender. Key words: Shield, Compress, Press, Help.",
-    diagramUrl: "diagrams/defending-3v3-compact-small-goals.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U9-U10 Week 9 (2020)"
@@ -1309,7 +1309,7 @@ const drills = [
     setup: "40W x 35L area. Regular goal one end, 3 counter goals other end. Build-out line. 5 Blue vs 4 Red. Rotate every interval.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "Ask: 'As a group what must we do to close passing lanes?' Answer: make it compact and stay compact. 'When should we double team?' Answer: when we outnumber the opponents. Key words: Close passing lanes, Press, Help, Double team.",
-    diagramUrl: "diagrams/defending-5v4-outnumber-counter.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U9-U10 Week 10 (2020)"
@@ -1332,7 +1332,7 @@ const drills = [
     setup: "Field divided in half. Cone base zones at each end. Equal balls in each base. Equal teams.",
     duration: "10–15 min",
     coachTip: "Encourage players to think strategically — send some players to attack while others defend.",
-    diagramUrl: "diagrams/capture-the-balls.svg",
+    diagramUrl: "",
     videoUrl: "https://www.youtube.com/watch?v=b5jDI9VwrZY",
     resourceUrl: "https://mojo.sport/coachs-corner/10-best-u8-soccer-drills/",
     source: "Mojo Sport U8/U10"
@@ -1374,7 +1374,7 @@ const drills = [
     setup: "20x20 grid. Every player has a ball. All play simultaneously.",
     duration: "8 min (multiple rounds)",
     coachTip: "Body between the defender and the ball. Small quick touches keep the ball close.",
-    diagramUrl: "diagrams/shield-steal.svg",
+    diagramUrl: "",
     videoUrl: "https://www.youtube.com/watch?v=pO01355RBq8",
     resourceUrl: "https://mojo.sport/coachs-corner/10-best-u8-soccer-drills/",
     source: "Mojo Sport U8"
@@ -1437,7 +1437,7 @@ const drills = [
     setup: "Half field (or 25x35 yard grid), one goal with GK. 1 defender starts at top of penalty area. 2 attackers start at midfield with ball.",
     duration: "15 min (rotate all players through attacker and defender roles)",
     coachTip: "Attackers: draw the defender, then pass to the open player. Defender: delay, don't dive in.",
-    diagramUrl: "diagrams/2-vs-1-to-goal.svg",
+    diagramUrl: "",
     videoUrl: "https://www.youtube.com/watch?v=3QzTKMB0wIs",
     resourceUrl: "https://mojo.sport/coachs-corner/10-best-u8-soccer-drills/",
     source: "Mojo Sport U8/U10"
@@ -1458,7 +1458,7 @@ const drills = [
     setup: "10x20 yard channel (cones). One ball per pair. Players start at opposite ends.",
     duration: "10 min (short rounds, rotate partners)",
     coachTip: "Attacker: use a change of pace or direction. Defender: stay on your feet, show the attacker to the sideline.",
-    diagramUrl: "diagrams/1-vs-1-to-endlines.svg",
+    diagramUrl: "",
     videoUrl: "https://www.youtube.com/watch?v=epOq-E1gfP8",
     resourceUrl: "https://mojo.sport/coachs-corner/10-best-u8-soccer-drills/",
     source: "Mojo Sport U8/U10"
@@ -1479,7 +1479,7 @@ const drills = [
     setup: "Full small-sided field with goals. Two teams lined up on opposite sidelines, numbered. Coach at midfield with all balls.",
     duration: "15–20 min",
     coachTip: "Call numbers quickly and unpredictably. When a new player joins, they should immediately find their role. Great end-of-practice game.",
-    diagramUrl: "diagrams/flying-numbers.svg",
+    diagramUrl: "",
     videoUrl: "https://www.youtube.com/watch?v=oNlHzG_mJnk",
     resourceUrl: "https://mojo.sport/coachs-corner/10-best-u10-soccer-drills/",
     source: "Mojo Sport U8+/U10/U12"
@@ -1542,7 +1542,7 @@ const drills = [
     setup: "Half field or 25x35 yard grid. Goal with GK. 2 defenders between midfield and box. 3 attackers start at midfield with ball.",
     duration: "15 min (rotate all players)",
     coachTip: "Get one defender to commit, then play around them. Defenders: one pressures ball, one covers the most dangerous attacker.",
-    diagramUrl: "diagrams/3-vs-2-to-goal.svg",
+    diagramUrl: "",
     videoUrl: "https://www.youtube.com/watch?v=2qBZ9M30ye4",
     resourceUrl: "https://mojo.sport/coachs-corner/10-best-u10-soccer-drills/",
     source: "Mojo Sport U8/U10/U12"
@@ -1584,7 +1584,7 @@ const drills = [
     setup: "25x35 field, goals on end lines. Central 10x10 'hot box' zone marked. 4v4 or 5v5.",
     duration: "15 min",
     coachTip: "Ask: 'Is the middle open? If yes, go through it. If no, go around.'",
-    diagramUrl: "diagrams/hot-box.svg",
+    diagramUrl: "",
     videoUrl: "https://www.youtube.com/watch?v=uKc8JDKy9Gc",
     resourceUrl: "https://mojo.sport/coachs-corner/10-best-u12-soccer-drills/",
     source: "Mojo Sport U10/U12"
@@ -1626,7 +1626,7 @@ const drills = [
     setup: "Full small-sided field with goals. 5v5 or 6v6. Field divided into thirds — bonus points for winning ball in attacking third.",
     duration: "15 min",
     coachTip: "Make the bonus points visible — track them out loud. Celebrate winning the ball high up the field even if they don't score.",
-    diagramUrl: "diagrams/liverpool.svg",
+    diagramUrl: "",
     videoUrl: "https://www.youtube.com/watch?v=w2zdjef-n_4",
     resourceUrl: "https://mojo.sport/coachs-corner/10-best-u12-soccer-drills/",
     source: "Mojo Sport U12"
@@ -1647,7 +1647,7 @@ const drills = [
     setup: "Start at 30x40 field with goals. Every 4 min, move each sideline cone 2–3 yards inward. 4v4 or 5v5.",
     duration: "15 min (3 shrinking phases)",
     coachTip: "After each shrink, pause and ask: 'What changed? What do you need to do differently now?'",
-    diagramUrl: "diagrams/shrinking-field.svg",
+    diagramUrl: "",
     videoUrl: "https://www.youtube.com/watch?v=th6bXhklwww",
     resourceUrl: "https://mojo.sport/coachs-corner/10-best-u12-soccer-drills/",
     source: "Mojo Sport U12"
@@ -1775,7 +1775,7 @@ const drills = [
     setup: "10x15 yard channel. 1v1 pairs, both with a ball. Multiple channels if group is large.",
     duration: "10 min (3–4 rounds per pairing, then swap opponents)",
     coachTip: "Body between the defender and the ball when shielding. Use sole of foot to drag the ball out of danger.",
-    diagramUrl: "diagrams/gladiators.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -1796,7 +1796,7 @@ const drills = [
     setup: "10x20 yard grid. One attacker with ball, one (or two) defenders. Rotate roles after 3 attempts.",
     duration: "12 min",
     coachTip: "Disguise is the key — speed up to commit the defender, then cut hard.",
-    diagramUrl: "diagrams/pizza-party.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -1817,7 +1817,7 @@ const drills = [
     setup: "30x20 yard grid with one goal and GK. Rotate attackers and defenders after each round.",
     duration: "15 min (progress through 1v1 → 2v1 → unit defending)",
     coachTip: "1v1: show the attacker to their weaker side, delay until help arrives. 2v1: one defender pressures ball, second covers the goal.",
-    diagramUrl: "diagrams/no-escape.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -1838,7 +1838,7 @@ const drills = [
     setup: "20x25 yard grid. Two target zones on opposite end lines. 3 attackers, 3 defenders. Coach feeds ball to attackers.",
     duration: "12 min (rotate attack/defense every 4 min)",
     coachTip: "Defenders: read where the ball is going, don't just react to where it is. Position in the passing lane, not behind the attacker.",
-    diagramUrl: "diagrams/interceptors.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -1882,7 +1882,7 @@ const drills = [
     setup: "45x30 yard area divided into 3 equal 15-yard zones. Two teams in outer zones, one defending team in middle. Coach with supply of balls on side.",
     duration: "12 min (2 rounds of 3 min defending + rotations)",
     coachTip: "Defenders: stay compact and read where the pass is going before it's kicked. Attackers: move to create passing angles in the outer zones before releasing the ball.",
-    diagramUrl: "diagrams/behind-enemy-lines.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games/behind-enemy-lines1",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -1966,7 +1966,7 @@ const drills = [
     setup: "Goal on one end, coned channel (alley) leading to it. Two teams. Attackers queue to attack; defenders rotate through the alley. Coach feeds balls to attackers.",
     duration: "12 min",
     coachTip: "Defenders: delay before making a move — don't rush in. Work with your teammate to press and angle the attacker toward the sideline.",
-    diagramUrl: "diagrams/tin-pan-alley.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games/tin-pan-alley",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2050,7 +2050,7 @@ const drills = [
     setup: "30x20 yard area. Flag or cone in the center. 4 gates (pairs of cones) on the perimeter. 3 defenders inside; 3 attacking teams of 3 rotate in from outside.",
     duration: "12 min (rotate defenders every 3 min)",
     coachTip: "Defenders: you can't guard all four gates — read where the ball is and where attackers are setting up. Attackers: fake to one gate, then go through another.",
-    diagramUrl: "diagrams/the-alamo.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games/the-alamo/",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2071,7 +2071,7 @@ const drills = [
     setup: "40x30 yard grid. 5 small cone circles (pots, ~1 yard across) scattered inside. Defenders cannot run through or step over pots. Equal teams.",
     duration: "10 min (all players get an attacking turn)",
     coachTip: "Attackers: use disguise and change of pace to get past the defender before driving to an open pot. Defenders: tag, don't tackle — stay on your feet and between the attacker and the open pots.",
-    diagramUrl: "diagrams/powerball.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games/powerball",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2092,7 +2092,7 @@ const drills = [
     setup: "Full small-sided field with goals. Central 10-yard swamp zone marked with cones between the penalty areas. 5v5 or 6v6. GKs on their lines.",
     duration: "15 min",
     coachTip: "Teams that just kick it long quickly realize it doesn't work. Ask: 'Who can we play into the swamp?' If the middle is blocked, keep possession wide and wait.",
-    diagramUrl: "diagrams/the-swamp.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games/the-swamp",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2157,7 +2157,7 @@ const drills = [
     setup: "30x25 yard grid. Equal teams. One team in possession, one defending. Coach with spare balls.",
     duration: "12 min (rotate every 3 min)",
     coachTip: "Progress from interceptions-only to full pressure. Ask players: 'Where is the monkey? Where is the space?' The pass goes AWAY from the defender, not toward them.",
-    diagramUrl: "diagrams/don-t-feed-the-monkeys.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2178,7 +2178,7 @@ const drills = [
     setup: "40x30 yard area divided in half. Equal teams. Goals or end zones for scoring. Coach with spare balls.",
     duration: "12 min",
     coachTip: "The passing before the forward ball is as important as the forward ball itself. Defenders: don't wait — close fast and cut the passing lane.",
-    diagramUrl: "diagrams/over-the-border.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games/over-the-border",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2241,7 +2241,7 @@ const drills = [
     setup: "Small 10x10 yard grids. Groups of 3: 2 attackers, 1 defender. Multiple grids running simultaneously. Timer visible to players.",
     duration: "12 min (rapid rotations every 10–15 sec defending)",
     coachTip: "Defender: get close — don't defend from 5 yards. Angle your approach to cut off the easier pass option, then commit to the tackle when the attacker takes a heavy touch.",
-    diagramUrl: "diagrams/pin-it-to-win-it.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games/pin-it-to-win-it",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2283,7 +2283,7 @@ const drills = [
     setup: "40x30 yard area. 6 cone gates (~2 yards wide) at corners and midpoints of each long side. Equal teams. Coach with spare balls.",
     duration: "15 min (first to 8 points wins; reset and replay)",
     coachTip: "Players need to use ALL 6 pockets — not just the ones in front of them. Ask: 'Which pocket is open right now?'",
-    diagramUrl: "diagrams/pool-table.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games/pool-table",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2388,7 +2388,7 @@ const drills = [
     setup: "Narrow field ~20 yards wide x 35 yards long with goals on each end line. Equal teams. No wide channels — all play through the central tunnel.",
     duration: "12 min",
     coachTip: "The narrowness is the whole point — don't widen the field. Ask players after: 'What was harder than a normal field? What had to change?'",
-    diagramUrl: "diagrams/tunnel-vision.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games/tunnel-vision/",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2409,7 +2409,7 @@ const drills = [
     setup: "35x45 field with goals. Equal teams. Coach on sideline with balls. Normal SSG but with coach freeze-and-question moments.",
     duration: "15 min",
     coachTip: "The value is in the freeze moments. Stop play and ask: 'You just won the ball — where should you go? Who should run?' Then play on and see if they apply it.",
-    diagramUrl: "diagrams/up-and-down.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2430,7 +2430,7 @@ const drills = [
     setup: "Small-sided field with one full-size goal (or two small goals). GK in goal. Two equal teams numbered on the sideline. Coach with supply of balls.",
     duration: "15 min",
     coachTip: "Call numbers unpredictably — that's the whole point. Good for smaller groups or when you want to focus on individual 1v1 battles plus goalkeeper reactions.",
-    diagramUrl: "diagrams/magic-number.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2472,7 +2472,7 @@ const drills = [
     setup: "Half field with one full-size goal and GK. Coned shooting zone 20–25 yards from goal. Attackers and bodyguards paired up. Coach feeds balls to attackers.",
     duration: "12 min (rotate roles every 4 min)",
     coachTip: "Bodyguards: stay goal-side of your attacker, not ball-side. Your job is to block the shot, not win the ball. Attackers: change direction quickly — your bodyguard has to react to you.",
-    diagramUrl: "diagrams/bodyguards.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games/bodyguards/",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2493,7 +2493,7 @@ const drills = [
     setup: "Half field with one goal. One team attacks (dribbling/shooting); one team defends (arrests). Coach feeds balls from midfield.",
     duration: "12 min (rotate attack/defense every 4 min)",
     coachTip: "Attackers: keep moving — a stationary player gets arrested. Rescuing a teammate is a real skill (timing the run to avoid getting arrested yourself).",
-    diagramUrl: "diagrams/under-arrest.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2619,7 +2619,7 @@ const drills = [
     setup: "Half field with one full-size goal. Defenders start facing the coach. Attackers start behind the defenders. Coach plays ball over the top. Rotate roles after each rep.",
     duration: "12 min",
     coachTip: "First step is everything — turn on the first touch of the ball landing. Don't watch the ball in the air; watch the attacker's run. Get goal-side first, then worry about the ball.",
-    diagramUrl: "diagrams/it-s-behind-you.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2640,7 +2640,7 @@ const drills = [
     setup: "Penalty area. Coach feeds simultaneous balls from three directions (distance shot, wide cross, flank dribbler). GK in goal. Attackers and defenders inside the box. Multiple balls ready.",
     duration: "12 min (rotate roles and positions every 3 min)",
     coachTip: "The chaos is the point — reactions to loose balls and follow-ups. Don't freeze when three balls are coming. GK: communicate who you're taking.",
-    diagramUrl: "diagrams/triple-whammy.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2770,7 +2770,7 @@ const drills = [
     setup: "Large circle (use center circle or ~25-yard coned circle). Small triangle of cones in the center = the bank. ~2/3 of players are cops with balls, ~1/3 are robbers without. Add players as they arrive.",
     duration: "10 min (open-ended arrival activity)",
     coachTip: "Start this immediately when the first 3–4 players arrive. It's self-managing once running. As more players arrive, assign them as cops or robbers.",
-    diagramUrl: "diagrams/cops-and-robbers.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/drills/cops-and-robbers",
     source: "Soccer Coach Weekly"
@@ -2791,7 +2791,7 @@ const drills = [
     setup: "Large coned grid (~30x30 yards). 1–2 sharks (no ball) to start. All other players with a ball (fish). Add or remove sharks depending on group size.",
     duration: "8–10 min (open-ended; reset when 1 fish remains)",
     coachTip: "Start this as soon as 4+ players arrive. Sharks: use the inside of your foot to knock the ball — not your toe. Fish: keep the ball close when a shark is near.",
-    diagramUrl: "diagrams/sharks-and-fishes.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/warm-ups",
     source: "Soccer Coach Weekly"
@@ -2812,7 +2812,7 @@ const drills = [
     setup: "Small grid ~10x10 yards. 4–6 outer players, 2 defenders in the middle. One ball. Add players as they arrive.",
     duration: "10 min (open-ended arrival activity)",
     coachTip: "Start with 4v2 and add players as they trickle in. The calling rule is the key — it forces players to decide BEFORE receiving, not while receiving.",
-    diagramUrl: "diagrams/rondo-decisions.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/warm-ups",
     source: "Soccer Coach Weekly"
@@ -2854,7 +2854,7 @@ const drills = [
     setup: "15x15 yard grid. Small triangle of cones (2 yards per side) in the center. 5 outer players, 2 defenders. One ball. Rotate defenders when they win the ball.",
     duration: "10 min (open-ended arrival activity)",
     coachTip: "The triangle in the middle is what makes this different from a normal rondo. Defenders can't just chase the ball — they have to be aware of what's behind them.",
-    diagramUrl: "diagrams/triangle-keep-ball.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/warm-ups",
     source: "Soccer Coach Weekly"
@@ -2965,7 +2965,7 @@ const drills = [
     setup: "Defensive third. Server (coach or player) delivers lofted balls into the box. Defenders clear. A target 'clearing zone' can be marked to give headers direction.",
     duration: "8 min",
     coachTip: "⚠️ U13+ SWYSA only. Defensive headers: height + distance + wide = good clear. Attack the ball early — don't let it come to you. One player calls 'mine' to avoid collisions.",
-    diagramUrl: "diagrams/head-up.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -3175,7 +3175,7 @@ const drills = [
     setup: "Half field or 1v1 channels. Pairs. Cones mark inside/outside paths. Coach calls 'inside' or 'outside' — defender must angle their approach to force that direction. GK optional.",
     duration: "12 min",
     coachTip: "Inside = toward the center of the field, toward help. Outside = toward the touchline, less dangerous. The basic rule: in your own half, defend to the outside.",
-    diagramUrl: "diagrams/inside-out.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -3390,7 +3390,7 @@ const drills = [
     setup: "Attacking half of 9v9 field, 50Wx43L area. Regular goal one end, 2 joker players in a 3-yard zone other end. 5 Blue vs 6 Red (includes jokers). Rotate every interval.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "ALL coaching directed at the defending (Red) team. Ask: 'Who and how do we block the forward pass?' Answer: closest defender to the ball protects the goal by positioning between ball and goal. 'When do we pressure?' Answer: when the attacker is about to receive or has a bad first touch. Key words: Block the way, Hassle, Help.",
-    diagramUrl: "diagrams/u12-defending-opp-half-5v6-to-goal-jokers.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U11-U12 Fall 2020 Week 7 (Spanish)"
@@ -3411,7 +3411,7 @@ const drills = [
     setup: "Attacking half of 9v9 field, 50Wx40L area. Regular goal one end, three 8-yard dribbling gates other end. 5 Blue vs 5 Red. Rotate every interval.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "Key concept: make it compact AND stay compact. Ask: 'When is a good time to hassle the attacker?' Answer: when they have a bad first touch or receive facing their own goal. Compactness = close enough that a defender can help in 2–3 steps. Key words: Block the opening, Hassle, Work together, Help.",
-    diagramUrl: "diagrams/u12-defending-opp-half-5v5-to-goal-3-gates.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U11-U12 Fall 2020 Week 8 (Spanish)"
@@ -3432,7 +3432,7 @@ const drills = [
     setup: "Defensive half of 9v9 field, 50Wx30L area. Two small goals on each end. 5 Blue vs 4 Red. Rotate every interval.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "Ask: 'Who gets in between the ball and the goal?' Answer: closest defender. 'What does the closest defender do to force the ball away?' Answer: press on an angle. 'When do we double team?' Answer: when we outnumber the opponent. Key words: In front, Force away, Help, Double.",
-    diagramUrl: "diagrams/u12-prevent-build-up-own-half-5v4-to-4-small-goals.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U11-U12 Fall 2020 Week 9"
@@ -3453,7 +3453,7 @@ const drills = [
     setup: "Defending half of 9v9 field, 50Wx48L area. Regular goal each end. 6 Blue (defenders) vs 5 Red (attackers). Rotate every interval.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "Ask: 'Why do we put a defender in front of the ball?' Answer: to protect the goal. 'What do we do to close the openings?' Answer: make it compact and keep it compact. 'What does the closest defender do once we're compacted?' Answer: pressure the ball. Key words: In front, Close the openings, Closest defender, Help.",
-    diagramUrl: "diagrams/u12-prevent-build-up-own-half-6v5-to-regular-goals.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U11-U12 Fall 2020 Week 10"
@@ -3474,7 +3474,7 @@ const drills = [
     setup: "Own half of 9v9 field, 42Wx28L area. Regular goal one end, 2 small counter goals other end. 6 Blue (defenders) vs 4 Red. Rotate every interval.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "Ask: 'What are we doing when we get in between the ball and the goal?' Answer: protecting the goal. 'How do we minimize passing lanes?' Answer: make it compact and keep it compact. 'Who presses after we're compacted?' Answer: closest defender. Key words: In Between, Minimize, Press, Help.",
-    diagramUrl: "diagrams/u12-prevent-scoring-6v4-to-goal-2-small-goals.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U11-U12 Fall 2020 Week 11"
@@ -3495,7 +3495,7 @@ const drills = [
     setup: "Own half of 9v9 field, 50Wx30L area. Regular goal each end. 6 Blue vs 5 Red. Rotate every interval.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "Ask: 'How can a defender block the shot to goal?' Answer: position between the ball and goal. 'Who hassles the player with the ball?' Answer: closest defender. 'When do we double team?' Answer: when we outnumber the attacker with the ball. Key words: Block the shot, Hassle, Help, Double.",
-    diagramUrl: "diagrams/u12-prevent-scoring-6v5-to-regular-goals.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U11-U12 Fall 2020 Week 12"
@@ -3516,7 +3516,7 @@ const drills = [
     setup: "50Wx40L field. Regular goal one end, 2 counter goals other end. 5 Blue attackers vs 5 Red defenders + GK. Rotate every interval. All Laws of the game in effect.",
     duration: "20 min (4 intervals: 4 min play, 1 min rest)",
     coachTip: "Ask: 'Who should attack the player with the ball?' Answer: the closest defender presses. 'Why do we need to work together?' Answer: to get and stay compact to prevent them moving the ball forward. 'When should we steal the ball?' Answer: when we're close enough to poke it, tackle it, or steal it. Key words: Attack the ball, Work together, Tackle or poke.",
-    diagramUrl: "diagrams/u12-prevent-opponent-build-up-5v6-to-goal-counter-goals-fall-2019.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U11-U12 Fall 2019"
@@ -3563,7 +3563,7 @@ const drills = [
     setup: "Open field, no boundaries needed. Coach dribbles freely. All players dribble freely. Players try to kick coach's ball away — coach tries to keep it. Coach holds 2 spare balls visibly. Reset after all 3 are knocked away.",
     duration: "5–8 min (1–2 rounds; wears coach out fast!)",
     coachTip: "Ham it up — groan, limp, look horrified when they get your ball. Kids absolutely love it. Save this for the end of the last practice of the season. Best U6–U10; older kids figure it out too fast.",
-    diagramUrl: "diagrams/defeat-the-coach.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://www.reddit.com/r/SoccerCoaching/",
     source: "Reddit r/SoccerCoaching — rec coach community"
@@ -3628,7 +3628,7 @@ const drills = [
     setup: "Open space ~30 yards. Work in pairs. Player A runs with ball. Player B chases. When possession changes (or after reaching end), roles reverse immediately. Run for 1–2 min intervals.",
     duration: "8–10 min",
     coachTip: "Cue: 'head up — see the space.' Teach the large touch forward (instep, toe down) to take 2–3 steps between touches. The urgency of being chased makes players naturally accelerate. Works as first progression before 2v2 Breakout.",
-    diagramUrl: "diagrams/ball-chaser.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://www.freedomoptsoccer.com/wp-content/uploads/2017/06/SS360-U13-Coaching-Manual.pdf",
     source: "Soccer Source 360 U13 Manual — John Dingle"
@@ -3649,7 +3649,7 @@ const drills = [
     setup: "Two 10x5 yd grids, 15 yards apart. 3 players per grid (2 active + 1 resting). 2v2 in one grid. On turnover: ball winner runs to far grid, 1 defender chases. 2v2 resumes at far grid. Rotate resting player in.",
     duration: "12 min",
     coachTip: "Key moment: the instant possession changes. Ball winner's first touch must go forward toward the gap — not sideways. Chaser must commit to full sprint. Teach: 'win the ball — take space immediately.'",
-    diagramUrl: "diagrams/2v2-breakout.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://www.freedomoptsoccer.com/wp-content/uploads/2017/06/SS360-U13-Coaching-Manual.pdf",
     source: "Soccer Source 360 U13 Manual — John Dingle"
@@ -3670,7 +3670,7 @@ const drills = [
     setup: "8x15 yd grid. 2 attackers on one end line (with balls), 2 defenders on the other. A1 dribbles vs D1. If A1 beats D1 = pass back to A2, who now goes vs D2. If A1 in trouble = shield + bail out pass to A2. That ends their turn; D1+A1 rest while A2 vs D2 plays. Rotate.",
     duration: "12 min",
     coachTip: "The bail-out is the whole point — teach players it's NOT failure to recycle possession. Cue: 'if you can't go, protect and recycle.' Removes the mindset that you must always try to beat the defender. SS360 philosophy: shoot > run > pass > shield.",
-    diagramUrl: "diagrams/1v1-with-bail-out.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://www.freedomoptsoccer.com/wp-content/uploads/2017/06/SS360-U13-Coaching-Manual.pdf",
     source: "Soccer Source 360 U13 Manual — John Dingle"
@@ -3691,7 +3691,7 @@ const drills = [
     setup: "Channel ~10Wx20L, split at midpoint with a cone. 2 attackers with balls on one end line; 1 defender at each midpoint. A1 enters grid — D1 becomes active once ball crosses start line, can only defend first half. When ball passes midpoint, D2 activates. D1 can't follow. Rotate all 4 players.",
     duration: "12 min",
     coachTip: "Teach attackers to accelerate after beating D1 — don't slow down. D2 is fresher and positioned; attacker's advantage is momentum. Cue defenders: 'force wide in your zone, don't let them through the middle.'",
-    diagramUrl: "diagrams/1v1-ladder.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://www.freedomoptsoccer.com/wp-content/uploads/2017/06/SS360-U13-Coaching-Manual.pdf",
     source: "Soccer Source 360 U13 Manual — John Dingle"
@@ -3712,7 +3712,7 @@ const drills = [
     setup: "Full-size or 3/4 field divided into 3 equal thirds with cone lines. 8v8. Ball cannot be passed across the third lines — must be carried. Player who runs ball into a new third stays there. Transitions shift player numbers in each third dynamically.",
     duration: "20 min",
     coachTip: "Freeze play when a player passes the ball over a third line — the constraint is the whole lesson. Cue: 'if you want to advance, you go with it.' After 10 min you can relax the rule and see if running-with-ball habit carries over into free play.",
-    diagramUrl: "diagrams/8v8-thirds.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://www.freedomoptsoccer.com/wp-content/uploads/2017/06/SS360-U13-Coaching-Manual.pdf",
     source: "Soccer Source 360 U13 Manual — John Dingle"
@@ -3777,7 +3777,7 @@ const drills = [
     setup: "Half field with halfway line clearly marked. 4v4 to goals. On loss of possession, entire losing team must sprint back to their half before defending. Attacking team has a brief advantage — they must be decisive. Resume normal play once both teams are in position.",
     duration: "15 min",
     coachTip: "The recovery rule forces players to experience both the attacking advantage of playing against a recovering team AND the defensive discipline of recovering before pressing. Cue: 'back first, then press.' Great for teaching defensive shape and transition.",
-    diagramUrl: "diagrams/4v4-everyone-recovers.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://lexingtonunited.org/4v4-everyone-recovers/",
     source: "Lexington United Soccer Club — Coach Donahue"
@@ -3798,7 +3798,7 @@ const drills = [
     setup: "Full goal with GK. Two lines of players at angles outside the penalty area, each facing a disc/cone at top of arc. Line A passes to Line B partner → B shoots quickly. Simultaneously Line A player receives a ball → dribbles around cone → 1v1 vs B. Both move forward to discs after serving.",
     duration: "15 min",
     coachTip: "The mental transition is the whole point: shooter must IMMEDIATELY shift from 'I just shot' to 'now I'm defending.' Teach: quick shots, no elaborate preparation. Cue for the 1v1 attacker: 'dribble the cone fast, then face up.'",
-    diagramUrl: "diagrams/shot-followed-by-1v1.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://lexingtonunited.org/shot-followed-by-1v1/",
     source: "Lexington United Soccer Club — Coach Donahue"
@@ -3819,7 +3819,7 @@ const drills = [
     setup: "Penalty area + 5–7 yard zone marked behind it. 3 equal teams. Two teams compete, one retrieves. Attacking team can use build-up zone freely (no defenders allowed). Can't score from that zone. White wins ball → play to coach or dribble into zone → switch attack. GK saves → white clear line → roles reverse.",
     duration: "20 min",
     coachTip: "The build-up zone is the key innovation — it forces the attacking team to build intelligently rather than just shoot from outside. Teaches: circulating to find gaps, patience in the final third, and the habit of playing out of the back. Excellent for teams that overcrowd the box.",
-    diagramUrl: "diagrams/us-national-team-finishing-game.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://lexingtonunited.org/us-national-team-finishing-game/",
     source: "Lexington United Soccer Club — Coach Donahue"
@@ -3840,7 +3840,7 @@ const drills = [
     setup: "3/4 field. Coach at halfway line, wide. Two serving lines (one each side) of defenders. 3 attackers start from the opposite end. Coach serves → 3v2 to goal → Red server sprints to recover. Red wins ball → play to coach wide. Recovering defender stays on; 1 original defender exits. Repeat opposite direction.",
     duration: "15 min",
     coachTip: "Very demanding physically — design it as an interval exercise. Recovering player must sprint the whole way; half-efforts defeat the purpose. Teach the 3 attackers: 'play quickly before recovery arrives — you have a 3v2 advantage only briefly.' Coach on wide: makes Red work harder to win.",
-    diagramUrl: "diagrams/3v2-with-recovery-player.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://lexingtonunited.org/3v2-with-recovery-player-u14/",
     source: "Lexington United Soccer Club — Coach Donahue"
@@ -3905,7 +3905,7 @@ const drills = [
     setup: "35Lx30W field. GK or neutral on each end line. 3 attackers vs 2 defenders in middle. Score = successful transition pass to far GK. Possession must come back immediately. Losing player off, new player on. First to 10 pts. Best of 5 games.",
     duration: "15 min",
     coachTip: "Teach the habit: pass back → sprint wide → open hips. If defender covers wide, the inside split pass opens up. Emphasis on quick transition mindset — not slow possession. 'Can I go to goal?' is always the first question after winning the ball.",
-    diagramUrl: "diagrams/double-target-rondo.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://www.ironvalleysoccer.org/wp-content/uploads/sites/820/2019/04/Plans-2019-Iron-Valley-U13-and-older-1.pdf",
     source: "Iron Valley Soccer U13+ Practice Plans 2019"
@@ -3926,7 +3926,7 @@ const drills = [
     setup: "20x20 yd outer box + 5x5 inner box. GK walks/jogs around outer edge of inner box. 7 players with 3 balls vs 3 pressers. Pressers must win ball cleanly — no kicking out. On win: immediate shot at GK. Balls out of bounds → back to 7. 2 min rounds × 7.",
     duration: "14 min (7 × 2 min rounds)",
     coachTip: "3 pressers must coordinate — chase the same ball together, don't split up after separate balls. Once they win one they go to goal immediately — no hesitation. GK progression: add a small goal 20 yds away so GK earns bonus points for accurate 3-second distribution into it.",
-    diagramUrl: "diagrams/3-ball-pressure.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://www.ironvalleysoccer.org/wp-content/uploads/sites/820/2019/04/Plans-2019-Iron-Valley-U13-and-older-1.pdf",
     source: "Iron Valley Soccer U13+ Practice Plans 2019"
@@ -3947,7 +3947,7 @@ const drills = [
     setup: "18-box area plus a slightly larger coned area adjacent. 2 Blue mini goals + 1 large goal for Red. 5 Blue (including GK) vs 3 Red. Coach plays ball into keeper to start. All players start in coned area but can use 18-box. Larger variation: add a 2nd large goal 36 yds away for more players.",
     duration: "15 min (5 games to 3 pts each)",
     coachTip: "Cue for Blue: 'attract first — then attack the space.' Depth players look for split passes through the middle. Back players look for wall passes with GK. Red: press as a compact unit, don't spread — if you chase the ball individually, Blue will find the open side every time.",
-    diagramUrl: "diagrams/attract-and-attack.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://www.ironvalleysoccer.org/wp-content/uploads/sites/820/2019/04/Plans-2019-Iron-Valley-U13-and-older-1.pdf",
     source: "Iron Valley Soccer U13+ Practice Plans 2019"
@@ -3968,7 +3968,7 @@ const drills = [
     setup: "Half field with halfway line marked. 7v6+GK. Red plays to large goal, Blue plays to 2 mini goals. All restarts from center. Goal only counts if all teammates are past midline. Counter goal = double if any defenders are caught upfield. Progressions: even numbers + 2 large goals; defending team 1–2 touch on counter; bonus pts for 3-second counter.",
     duration: "20 min (5 games to 5 pts)",
     coachTip: "The double-counter-goal rule is the engine of this drill — it punishes teams that leave players forward on turnover and rewards immediate counter-pressing. Cue: 'win the ball in position to counter.' After turnover: regain within 4 seconds or drop compact.",
-    diagramUrl: "diagrams/dutch-possess-and-counter.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://www.ironvalleysoccer.org/wp-content/uploads/sites/820/2019/04/Plans-2019-Iron-Valley-U13-and-older-1.pdf",
     source: "Iron Valley Soccer U13+ Practice Plans 2019"
@@ -3989,7 +3989,7 @@ const drills = [
     setup: "Half field + mid circle. 20x20 yd yellow box near midfield. Wide alleys ~30 yds from goal. 4v4 starts in box (Red keeps, Blue presses). On Blue win: break to goal, 6v4. On Red win: back to box rondo. Positional rules: 9 or 10 must break into alley on breakout; 7/11 stay wide; 6/8 negative support. Progression: 2 more Red join defense, Blue plays 2-touch.",
     duration: "15 min",
     coachTip: "The rondo is just the trigger — the coaching happens in the transition moment. Where does each positional player go? Teach 9 and 10 to create different angles (if 10 right, 9 creates depth on left). Don't force play and lose it — they run less if they keep the ball!",
-    diagramUrl: "diagrams/win-ball-in-midfield-rondo.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://www.ironvalleysoccer.org/wp-content/uploads/sites/820/2019/04/Plans-2019-Iron-Valley-U13-and-older-1.pdf",
     source: "Iron Valley Soccer U13+ Practice Plans 2019"
@@ -4164,7 +4164,7 @@ const drills = [
     setup: "Opponent's half, 70Wx70L area. Regular goal one end, 2 neutral joker players other end. 6 Blue vs 7 Red. Rotate every interval. Jokers restart play to Blue after receiving.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "ALL coaching directed at the Red (defending) team. Ask: 'Who and how do we block the forward pass?' — Closest defender to ball positions between ball and goal. 'When do we press?' — The moment the attacker receives with back to goal or a bad first touch. Key words: Block, Press, Steal, Help.",
-    diagramUrl: "diagrams/u13-defend-opp-half-6v7-to-goal-jokers.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U13+ Fall 2020 Week 7 (Spanish)"
@@ -4185,7 +4185,7 @@ const drills = [
     setup: "Opponent's half, 70Wx70L area. Regular goal one end, two 8-yard dribbling gates other end. 6 Blue vs 8 Red. Rotate every interval.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "Key concept: compact first, THEN press. Ask: 'Where should we be to prevent the forward pass and protect the goal?' — Between ball and goal. 'What do we do to reduce passing lanes?' — Create and maintain a compact defensive block. 'Once compacted, who presses?' — Closest defender to ball. Key words: Prevent, Reduce, Press, Help.",
-    diagramUrl: "diagrams/u13-defend-opp-half-6v8-to-goal-dribbling-gates.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U13+ Fall 2020 Week 8 (Spanish)"
@@ -4206,7 +4206,7 @@ const drills = [
     setup: "11v11 field, 70Wx45L area. Two mini-goals each end. 6 Blue vs 5 Red. Both teams score in opponent's mini-goals. Rotate every interval.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "Ask: 'Who covers the path to our goal?' — Closest defender. 'What should that defender do?' — Press the ball. 'Who helps the pressing defender?' — Other defenders provide cover and balance. 'When do we double-team?' — When we have numerical superiority. Key words: Block path, Press, Help, Double-team.",
-    diagramUrl: "diagrams/u13-prevent-build-up-own-half-6v5-to-mini-goals.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U13+ Fall 2020 Week 9 (Spanish)"
@@ -4227,7 +4227,7 @@ const drills = [
     setup: "11v11 field, 70Wx70L area. Regular goal each end. 7 Blue (defending) vs 6 Red. Both score in opponent's goal. Rotate every interval.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "Ask: 'Who blocks the path to our goal?' — Closest defender. 'What do we do to close passing lanes?' — Create and maintain a compact defensive block. 'Once compacted, what does the closest defender do?' — Press the ball. 'How do others help?' — Cover and balance. Key words: Block, Close passing lanes, Press, Help.",
-    diagramUrl: "diagrams/u13-prevent-build-up-own-half-7v6-to-goal.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U13+ Fall 2020 Week 10 (Spanish)"
@@ -4248,7 +4248,7 @@ const drills = [
     setup: "Own half, 50Wx40L area. Regular goal one end, two 8-yard dribbling gates other end. 7 Blue (defenders) vs 5 Red. Rotate every interval.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "Ask: 'Who blocks the path to goal?' — Closest defender. 'What do we do when we compress passing lanes?' — Create a compact block. 'Why do we press after compacting?' — To pressure the ball. 'How do others help?' — Cover and balance. Key words: Block, Compress, Press, Help.",
-    diagramUrl: "diagrams/u13-prevent-scoring-7v5-to-goal-dribbling-gates.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U13+ Fall 2020 Week 11 (Spanish)"
@@ -4269,7 +4269,7 @@ const drills = [
     setup: "11v11 field, 70Wx40L area. Regular goal each end. 7 Blue vs 6 Red. Both score in opponent's goal. Rotate every interval.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "Ask: 'How does a defender block a shot?' — Position between ball and goal. 'Who presses the attacker?' — Closest defender. 'Why press?' — To pressure the ball. 'When do we double-team?' — When we have numerical superiority. Key words: Block, Compress, Press, Help, Double-team.",
-    diagramUrl: "diagrams/u13-prevent-scoring-7v6-to-regular-goals.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U13+ Fall 2020 Week 12 (Spanish)"
@@ -4296,7 +4296,7 @@ const drills = [
     setup: "Cone off a channel 4-5 yards wide by 15 yards long. Small goal or end-zone target at each end. One ball per pair.",
     duration: "8-10 min (30 sec reps, switch roles)",
     coachTip: "Cue: 'Stay on your toes, show them the sideline.' The defender's job here isn't to win the ball — it's to slow the attacker down and force a mistake. Praise good jockeying even when the attacker still scores.",
-    diagramUrl: "diagrams/narrow-channel-jockey.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://athletesuntapped.com/blog/soccer-jockey-technique-defenders/",
     source: "Athletes Untapped — Teaching Soccer Defenders Proper Jockey Technique"
@@ -4317,7 +4317,7 @@ const drills = [
     setup: "One cone/mannequin target per player, spread across the width of a grid. Coach stands where all players can hear the calls.",
     duration: "10 min",
     coachTip: "Run it slow the first few reps so players learn the four positions cleanly, then speed up the calls. The goal is that the correct body shape becomes automatic before you ever add a live attacker.",
-    diagramUrl: "diagrams/jockey-command-calls.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://www.soccercoachweekly.net/drills-and-games/drills/1v1-defending-technique",
     source: "Soccer Coach Weekly — 1v1 Defending Technique"
@@ -4338,7 +4338,7 @@ const drills = [
     setup: "20x10 yard area, target goal at each end, cones and bibs. Coach restarts every attack by playing the ball in.",
     duration: "12-15 min",
     coachTip: "Watch for over-commitment — a defender who dives in immediately gets beaten every time here. Coach the words 'delay, don't dive' and reward defenders who force a mistake by staying patient.",
-    diagramUrl: "diagrams/delay-the-play-2v2.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://www.soccercoachweekly.net/drills-and-games/practice-delay-the-play-1v1",
     source: "Soccer Coach Weekly — Delay the Play 1v1"
@@ -4359,7 +4359,7 @@ const drills = [
     setup: "Two cone gates roughly 10x10 yards apart, facing different directions. One ball per pair.",
     duration: "10 min",
     coachTip: "Rotate attacker/defender every 3-4 reps so both roles get worked evenly. For defenders, the coaching point is anticipation — watch the hips, not the ball.",
-    diagramUrl: "diagrams/1v1-reaction-gate-challenge.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://soccerxpert.com/drills/details/1v1-gate-challenge",
     source: "SoccerXpert — 1v1 Reaction Gate Challenge"
@@ -4598,7 +4598,7 @@ const drills = [
     setup: "Small-sided field with goals, sized for the numbers you have (e.g. 6v6 or 7v7). Normal play otherwise. Coach calls out loud '1-2-3-4-5-6' after every turnover so players feel the actual window.",
     duration: "15-20 min",
     coachTip: "The nearest three players press — not just whoever is closest to goal. If the count reaches 6 and the ball isn't won, blow a whistle and have the whole team drop off together rather than half-pressing forever, which just leaves gaps everywhere.",
-    diagramUrl: "diagrams/6-second-counter-press.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://hobbit.football/guides/coaching-transitions-youth-football",
     source: "Hobbit Football — Coaching Transitions in Youth Football (U10-U14)"
@@ -4619,7 +4619,7 @@ const drills = [
     setup: "Small goal with two lines of players facing it, one acting as attackers and one as defenders to start. Continuous — no stopping between reps.",
     duration: "10-12 min",
     coachTip: "Watch for the mental lag — players who just defended often jog into the next rep instead of immediately thinking like an attacker. Call out 'go, go, go!' the instant a duel ends to keep the transition sharp.",
-    diagramUrl: "diagrams/1v1-transition-duel.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://soccerxpert.com/drills/details/id1252",
     source: "SoccerXpert — 1v1 Transition Drill"
@@ -4640,7 +4640,7 @@ const drills = [
     setup: "Two adjacent small grids (roughly 10x10 yards each). 4 attackers plus 2 defenders in one grid. On a defender win, roles flip immediately and play continues without a coach reset. 4 consecutive passes moves the group to the next grid.",
     duration: "12-15 min",
     coachTip: "The value is entirely in what happens the instant possession changes — don't let players jog or wait for a whistle. The four who just lost the ball should be pressing within a step or two, not standing and watching.",
-    diagramUrl: "diagrams/4v2-counter-press-rondo.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://soccer-coaches.com/3-drills-improve-counter-pressing/",
     source: "Soccer-Coaches.com — 3 Drills to Improve Counter-Pressing (adapted from Steven Turek)"
@@ -4661,7 +4661,7 @@ const drills = [
     setup: "40x20 yard field split into three equal zones with cone lines. Goals at each end. 5v5 or 6v6. Coach counts '1-2-3' out loud after every turnover.",
     duration: "15 min",
     coachTip: "This works because the defensive cover should already be in position before the ball is lost — not scrambling into place afterward. If a team is constantly stretched across all three zones, that's the real problem to fix, not the pressing itself.",
-    diagramUrl: "diagrams/three-zone-transition-press.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://areacopa.com/en/blog/transition-play-youth-football",
     source: "AreaCopa — Transition Play in Youth Football: 3 Seconds That Decide Games"
@@ -4682,7 +4682,7 @@ const drills = [
     setup: "Half field with a full-size goal and GK. Start with 2 attackers vs 1 defender. As soon as that phase ends (goal, save, or clearance), the next wave (3 attackers vs 2 defenders) starts immediately from a new group waiting at midfield.",
     duration: "15 min",
     coachTip: "The pace between phases is the coaching point — attackers need to recognize and use their numbers advantage fast, before the next wave of defenders arrives fresh. Rotate all players through both attacking and defending roles.",
-    diagramUrl: "diagrams/numbers-up-transition-ladder.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://www.soccercoachlab.com/soccer-drills-tags/transition",
     source: "Soccer Coach Lab — Numerical Advantage Transition Sequence (2v1 to 3v2)"
@@ -4703,7 +4703,7 @@ const drills = [
     setup: "Full or three-quarter field with goals. 6 core players per team plus 6 neutral players spread around the boundary who always support the team in possession. Normal game rules otherwise.",
     duration: "18-20 min",
     coachTip: "The neutrals should stay wide and available — they're an outlet, not a third team. Watch for the moment possession flips through a neutral pass and see how fast each team reorganizes.",
-    diagramUrl: "diagrams/six-v-six-plus-six-neutrals.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://www.soccercoachlab.com/soccer-drills-tags/attacking-transition-defensive-transition",
     source: "Soccer Coach Lab — 6v6 Plus 6 Neutrals Transition Game (Klopp-inspired)"
@@ -4724,7 +4724,7 @@ const drills = [
     setup: "Penalty area and surrounding space, full-size goal with GK. Three teams of 4 rotate: 2 active (1 attacking, 1 defending), 1 resting/serving. Restart with a new ball whenever play breaks down.",
     duration: "15 min",
     coachTip: "The coaching focus is angles, not effort — a defender sprinting everywhere but leaving a clear shooting or crossing lane open hasn't actually defended the danger zone. Ask: 'did you close the angle, or just close the distance?'",
-    diagramUrl: "diagrams/defend-the-danger-zone.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://www.soccercoachlab.com/soccer-drills-tags/transition-defensive-offensive",
     source: "Soccer Coach Lab — Danger Zone Management, 3 Teams of 4"
@@ -4745,7 +4745,7 @@ const drills = [
     setup: "Full field or three-quarter field. Full-size goal with GK at the defending end, two small mini-goals at the other end. Defending team must survive a timed period (e.g. 45-60 seconds) before earning the right to counter on the mini-goals.",
     duration: "18-20 min",
     coachTip: "Defenders often want to counter-attack immediately — the discipline here is staying compact and patient until the moment actually arrives. Reward the team that defends well with real praise, not just the team that scores.",
-    diagramUrl: "diagrams/delay-and-counter.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://www.soccercoachlab.com/soccer-drills-tags/transition",
     source: "Soccer Coach Lab — Delay, Protect, and Counter-Attack Scenario"
@@ -4766,7 +4766,7 @@ const drills = [
     setup: "30x30 yard grid. 8 possession players plus 4 boundary support players vs 4 pressing defenders inside. On a defender win, roles reverse immediately — no reset.",
     duration: "15 min",
     coachTip: "This is a demanding, high-tempo drill — the coaching moment is entirely in the first few seconds after any turnover. Cue: 'the ball is lost — where's the nearest three?' Don't let it slow into a normal possession game.",
-    diagramUrl: "diagrams/eight-v-four-counter-press.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://www.soccercoachlab.com/soccer-drills-tags/counter-pressing",
     source: "Soccer Coach Lab — 8v4 Counter-Pressing Exercise"
@@ -4787,7 +4787,7 @@ const drills = [
     setup: "Wide field split into thirds with cone lines. Goals at each end. Play in numbers appropriate to your group (e.g. 7v7 or 8v8). Bonus point for a forward pass completed within 2 touches of winning the ball centrally.",
     duration: "18-20 min",
     coachTip: "Watch the habit right after a central win — most youth players' instinct is to play safe and sideways. This game specifically rewards the brave forward option, which is what a real press is trying to set up.",
-    diagramUrl: "diagrams/vertical-press-zones-9v9.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://www.soccercoachlab.com/soccer-drills-tags/transition",
     source: "Soccer Coach Lab — Vertical Pressing in Zones"
@@ -4808,7 +4808,7 @@ const drills = [
     setup: "Small grid, standard rondo numbers (e.g. 5v2 or 6v3). Run in short, sharp sequences rather than one long continuous rondo.",
     duration: "10-12 min",
     coachTip: "Use this specifically as the warm-up before a session focused on counter-pressing — it sets the tone for the rest of practice. The habit you're building is instant reaction, not slow acceptance of losing the ball.",
-    diagramUrl: "diagrams/rondo-reaction-warm-up.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://www.soccercoachlab.com/soccer-drills-tags/counter-pressing",
     source: "Soccer Coach Lab — Rondo Reaction Sequences for Counter-Pressing"
@@ -4829,7 +4829,7 @@ const drills = [
     setup: "10x10 yard grid. Two teams of six, split with half on each side. One defender active at a time from the defending team. Attacker dribbles across, passes to a teammate on the far side to continue, defender rotates. Run in 3-minute blocks with rest between.",
     duration: "12-15 min (3-min blocks with rest)",
     coachTip: "The defender who just got beaten has to immediately reset and think about the next duel, not dwell on losing the last one. That quick mental reset is the actual skill being trained here, more than the 1v1 itself.",
-    diagramUrl: "diagrams/recovery-race-1v1.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://elitesoccercoaching.net/defending/counter-pressing",
     source: "Elite Soccer Coaching — Counter-Pressing Recovery Race"
@@ -4922,7 +4922,7 @@ const drills = [
     setup: "Scales from a half pitch (Phase 1) up to a full pitch (Phase 4), extending roughly 20 yards in length at each phase. Needs a full set of balls, cones, and both full-size and small target goals for the middle phases. Best run as a full team session moving through all four phases in one practice, roughly 10-30 minutes per phase depending on squad size.",
     duration: "60-80 min for the full progression (10 / 20 / 20 / 30 min per phase)",
     coachTip: "The key coaching points hold across every phase: press, keep team shape, stay compact on the same side as the ball, and keep the spacing inside each line to a distance that can be closed in two strides. Defenders should stand side-on, not square, so they can react to a ball played in behind. If the first press gets beaten, look for the recovery run into a covering position rather than a flat-out chase.",
-    diagramUrl: "diagrams/full-team-high-press-progression.svg",
+    diagramUrl: "",
     videoUrl: "",
     resourceUrl: "https://elitesoccercoaching.net/defending/simple-pressing-as-a-team",
     source: "Elite Soccer — Sean Dyche, Simple Pressing as a Team"
