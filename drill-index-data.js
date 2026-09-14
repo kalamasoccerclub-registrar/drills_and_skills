@@ -1034,7 +1034,7 @@ const drills = [
     setup: "15W x 25L grid, 3 small goals on one end line, 1 goal on other. 2v2. Coach outside center line.",
     duration: "18 min (9 intervals: 1 min play, 1 min rest)",
     coachTip: "The goal closest to the ball is most dangerous — one defender block it, the other pressure the ball.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/2v2-defend-3-goals-counter-to-1.svg",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U8 Week 9"
@@ -1055,7 +1055,7 @@ const drills = [
     setup: "25W x 35L field divided into thirds. Goal on each end line. 1 defender per zone. Attacking pairs each have a shared ball.",
     duration: "18 min (9 intervals: 1 min play, 1 min rest)",
     coachTip: "Defenders: bend your run to block the goal THEN move toward the ball. Force attackers to the sides.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/defend-each-zone.svg",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U8 Week 10"
@@ -1076,7 +1076,7 @@ const drills = [
     setup: "15W x 25L grid, goal near each corner on end lines. Coach at midfield with all balls. 2 teams on sidelines.",
     duration: "18 min (18 intervals: 30 sec play, 30 sec rest)",
     coachTip: "Team of 2 must cooperate — one pressures, one covers the goal.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/2v1-to-side-goals-reloading.svg",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U8 Week 11"
@@ -1246,7 +1246,7 @@ const drills = [
     setup: "24W x 35L area. Regular goal one end, end zone other end. Build-out line. 4 Blue defenders vs 5 Red. Rotate every interval.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "ALL coaching directed at the defending (Blue) team. Ask: 'How can we block the way forward?' Answer: get a defender between the ball and goal. Key words: Block the way, Hassle, Help.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/defending-4v5-pressure-end-zone.svg",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U9-U10 Week 7 (2020)"
@@ -1267,7 +1267,7 @@ const drills = [
     setup: "40W x 30L area. Regular goal one end, two 10-yard dribbling gates other end. Build-out line. 4 Blue vs 5 Red. Rotate every interval.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "Key concept: make it compact AND stay compact. Ask: 'When is a good time to hassle the attacker?' Answer: when they have a bad first touch or receive facing their own goal. Key words: Block the opening, Hassle, Work together, Help.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/defending-4v5-compact-dribbling-gates.svg",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U9-U10 Week 8 (2020)"
