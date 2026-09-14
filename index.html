@@ -712,16 +712,18 @@ const drillProgressions = {
 };
 // ────────────────────────────────────────────────────────────────────────────
 
-const typeEmoji = {
-'Game/Play': '🎮',
-'Technical': '🎯',
-'Scrimmage': '⚽',
-'Warm-Up': '🔥',
-'Cool-Down': '🧘',
-};
-function getDrillEmoji(drill) {
-return typeEmoji[drill.drillType] || '⚽';
-}
+// Thumbnail placeholder: a plain soccer ball outline shown until a drill has
+// its own real setup diagram. Once diagramUrl is set, the thumbnail shows a
+// cropped preview of that diagram instead — see buildCard() below.
+const BALL_PLACEHOLDER = `<svg viewBox="0 0 40 40" width="40" height="40">
+<circle cx="20" cy="20" r="13" fill="none" stroke="#ffffff" stroke-width="1.6" opacity="0.85"/>
+<polygon points="20,12 24.5,15.3 22.8,20.5 17.2,20.5 15.5,15.3" fill="#ffffff" opacity="0.85"/>
+<line x1="20" y1="12" x2="20" y2="7.5" stroke="#ffffff" stroke-width="1.3" opacity="0.85"/>
+<line x1="24.5" y1="15.3" x2="29" y2="12.5" stroke="#ffffff" stroke-width="1.3" opacity="0.85"/>
+<line x1="22.8" y1="20.5" x2="25.5" y2="26" stroke="#ffffff" stroke-width="1.3" opacity="0.85"/>
+<line x1="17.2" y1="20.5" x2="14.5" y2="26" stroke="#ffffff" stroke-width="1.3" opacity="0.85"/>
+<line x1="15.5" y1="15.3" x2="11" y2="12.5" stroke="#ffffff" stroke-width="1.3" opacity="0.85"/>
+</svg>`;
 function starRating(n) {
 const stars = ['','⭐','⭐⭐','⭐⭐⭐','⭐⭐⭐⭐','⭐⭐⭐⭐⭐'];
 return stars[Math.min(n, 5)] || '';
@@ -750,9 +752,12 @@ fill('filterEquip', equips, 'Any Equipment');
 fill('filterEnergy', energies, 'Any Energy Level');
 }
 function buildCard(drill, idx) {
-// Thumbnail always shows a simple type icon — too small (80px) for real setup detail
-const emoji = getDrillEmoji(drill);
-const diagramHtml = `<span>${emoji}</span>`;
+// Thumbnail: a cropped preview of the drill's own setup diagram once it
+// exists, otherwise a plain soccer ball placeholder (this also doubles as
+// a visual progress tracker for which drills still need a real diagram).
+const diagramHtml = drill.diagramUrl
+? `<img src="${drill.diagramUrl}" alt="${drill.name} diagram">`
+: BALL_PLACEHOLDER;
 const objective = coachingObjectives[drill.name] || (drill.coachingObjective || '');
 const objectiveHtml = objective
 ? `<div class="card-objective">${objective}</div>`
