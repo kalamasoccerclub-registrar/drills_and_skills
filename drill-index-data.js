@@ -255,7 +255,7 @@ const drills = [
     setup: "15W x 20L grid, cone goal in each corner. Coach in center with all balls. Two teams on either side.",
     duration: "8 min (16 intervals: 10 sec play, 20 sec rest)",
     coachTip: "Keep it at 1v1 until most players have scored at least once. Play the ball closer to a struggling player.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/soccer-combat.svg",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U6 Week 1"
@@ -759,7 +759,7 @@ const drills = [
     setup: "15W x 20L grid. Pairs spread across field. One ball per pair.",
     duration: "7 min (7 intervals: 30 sec play, 30 sec rest)",
     coachTip: "Find an opening all the way to the line then push the ball in front so you can run after it.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/1v1-dribble-challenge.svg",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U6 Week 9"
@@ -929,7 +929,7 @@ const drills = [
     setup: "15W x 25L field with 5-yard end zones on each end. 2v2 active.",
     duration: "20 min (10 intervals: 1 min play, 1 min rest)",
     coachTip: "Encourage 2v1 combinations: draw the defender then pass.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/2v2-to-end-zones.svg",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U8 Week 4"
@@ -971,7 +971,7 @@ const drills = [
     setup: "13W x 20L field (inside 25W x 35L), goal on each end line. Players in 2 groups at opposite corners.",
     duration: "18 min (18 intervals: 30 sec play, 30 sec rest)",
     coachTip: "Block the goal and steal the ball simultaneously: bend your run toward the goal first.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/4-corner-shooting-defending.svg",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U8 Week 6"
@@ -992,7 +992,7 @@ const drills = [
     setup: "25W x 35L field, goal on one end line, 3-yard end zone on the other. 3v3.",
     duration: "18 min (3 intervals: 4 min play, 2 min rest)",
     coachTip: "Closest defender to ball: step to it and pressure. Bend your run so you block the goal on your way to the ball.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/3v3-defend-your-goal.svg",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U8 Week 7"
