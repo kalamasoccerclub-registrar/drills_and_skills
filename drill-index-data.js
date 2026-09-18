@@ -1288,7 +1288,7 @@ const drills = [
     setup: "Two 19W x 25L fields inside 7v7 field. Small goal each end. 3v3. Kick-ins or dribble-ins when ball goes out.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "Ask: 'Who shields the goal?' Answer: closest defender gets between ball and goal. 'How do we compress?' Answer: all others get compact behind that defender. Key words: Shield, Compress, Press, Help.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/defending-3v3-compact-small-goals.svg",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U9-U10 Week 9 (2020)"
@@ -1309,7 +1309,7 @@ const drills = [
     setup: "40W x 35L area. Regular goal one end, 3 counter goals other end. Build-out line. 5 Blue vs 4 Red. Rotate every interval.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "Ask: 'As a group what must we do to close passing lanes?' Answer: make it compact and stay compact. 'When should we double team?' Answer: when we outnumber the opponents. Key words: Close passing lanes, Press, Help, Double team.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/defending-5v4-outnumber-counter.svg",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U9-U10 Week 10 (2020)"
@@ -1332,7 +1332,7 @@ const drills = [
     setup: "Field divided in half. Cone base zones at each end. Equal balls in each base. Equal teams.",
     duration: "10–15 min",
     coachTip: "Encourage players to think strategically — send some players to attack while others defend.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/capture-the-balls.svg",
     videoUrl: "https://www.youtube.com/watch?v=b5jDI9VwrZY",
     resourceUrl: "https://mojo.sport/coachs-corner/10-best-u8-soccer-drills/",
     source: "Mojo Sport U8/U10"
@@ -1374,7 +1374,7 @@ const drills = [
     setup: "20x20 grid. Every player has a ball. All play simultaneously.",
     duration: "8 min (multiple rounds)",
     coachTip: "Body between the defender and the ball. Small quick touches keep the ball close.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/shield-steal.svg",
     videoUrl: "https://www.youtube.com/watch?v=pO01355RBq8",
     resourceUrl: "https://mojo.sport/coachs-corner/10-best-u8-soccer-drills/",
     source: "Mojo Sport U8"
@@ -1437,7 +1437,7 @@ const drills = [
     setup: "Half field (or 25x35 yard grid), one goal with GK. 1 defender starts at top of penalty area. 2 attackers start at midfield with ball.",
     duration: "15 min (rotate all players through attacker and defender roles)",
     coachTip: "Attackers: draw the defender, then pass to the open player. Defender: delay, don't dive in.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/2-vs-1-to-goal.svg",
     videoUrl: "https://www.youtube.com/watch?v=3QzTKMB0wIs",
     resourceUrl: "https://mojo.sport/coachs-corner/10-best-u8-soccer-drills/",
     source: "Mojo Sport U8/U10"
