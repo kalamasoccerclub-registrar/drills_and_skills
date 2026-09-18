@@ -2640,7 +2640,7 @@ const drills = [
     setup: "Penalty area. Coach feeds simultaneous balls from three directions (distance shot, wide cross, flank dribbler). GK in goal. Attackers and defenders inside the box. Multiple balls ready.",
     duration: "12 min (rotate roles and positions every 3 min)",
     coachTip: "The chaos is the point — reactions to loose balls and follow-ups. Don't freeze when three balls are coming. GK: communicate who you're taking.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/triple-whammy.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2770,7 +2770,7 @@ const drills = [
     setup: "Large circle (use center circle or ~25-yard coned circle). Small triangle of cones in the center = the bank. ~2/3 of players are cops with balls, ~1/3 are robbers without. Add players as they arrive.",
     duration: "10 min (open-ended arrival activity)",
     coachTip: "Start this immediately when the first 3–4 players arrive. It's self-managing once running. As more players arrive, assign them as cops or robbers.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/cops-and-robbers.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/drills/cops-and-robbers",
     source: "Soccer Coach Weekly"
@@ -2791,7 +2791,7 @@ const drills = [
     setup: "Large coned grid (~30x30 yards). 1–2 sharks (no ball) to start. All other players with a ball (fish). Add or remove sharks depending on group size.",
     duration: "8–10 min (open-ended; reset when 1 fish remains)",
     coachTip: "Start this as soon as 4+ players arrive. Sharks: use the inside of your foot to knock the ball — not your toe. Fish: keep the ball close when a shark is near.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/sharks-and-fishes.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/warm-ups",
     source: "Soccer Coach Weekly"
@@ -2812,7 +2812,7 @@ const drills = [
     setup: "Small grid ~10x10 yards. 4–6 outer players, 2 defenders in the middle. One ball. Add players as they arrive.",
     duration: "10 min (open-ended arrival activity)",
     coachTip: "Start with 4v2 and add players as they trickle in. The calling rule is the key — it forces players to decide BEFORE receiving, not while receiving.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/rondo-decisions.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/warm-ups",
     source: "Soccer Coach Weekly"
@@ -2854,7 +2854,7 @@ const drills = [
     setup: "15x15 yard grid. Small triangle of cones (2 yards per side) in the center. 5 outer players, 2 defenders. One ball. Rotate defenders when they win the ball.",
     duration: "10 min (open-ended arrival activity)",
     coachTip: "The triangle in the middle is what makes this different from a normal rondo. Defenders can't just chase the ball — they have to be aware of what's behind them.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/triangle-keep-ball.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/warm-ups",
     source: "Soccer Coach Weekly"
