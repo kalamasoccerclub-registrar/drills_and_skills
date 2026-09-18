@@ -2965,7 +2965,7 @@ const drills = [
     setup: "Defensive third. Server (coach or player) delivers lofted balls into the box. Defenders clear. A target 'clearing zone' can be marked to give headers direction.",
     duration: "8 min",
     coachTip: "⚠️ U13+ SWYSA only. Defensive headers: height + distance + wide = good clear. Attack the ball early — don't let it come to you. One player calls 'mine' to avoid collisions.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/head-up.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -3175,7 +3175,7 @@ const drills = [
     setup: "Half field or 1v1 channels. Pairs. Cones mark inside/outside paths. Coach calls 'inside' or 'outside' — defender must angle their approach to force that direction. GK optional.",
     duration: "12 min",
     coachTip: "Inside = toward the center of the field, toward help. Outside = toward the touchline, less dangerous. The basic rule: in your own half, defend to the outside.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/inside-out.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -3390,7 +3390,7 @@ const drills = [
     setup: "Attacking half of 9v9 field, 50Wx43L area. Regular goal one end, 2 joker players in a 3-yard zone other end. 5 Blue vs 6 Red (includes jokers). Rotate every interval.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "ALL coaching directed at the defending (Red) team. Ask: 'Who and how do we block the forward pass?' Answer: closest defender to the ball protects the goal by positioning between ball and goal. 'When do we pressure?' Answer: when the attacker is about to receive or has a bad first touch. Key words: Block the way, Hassle, Help.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/u12-defending-opp-half-5v6-jokers.svg",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U11-U12 Fall 2020 Week 7 (Spanish)"
@@ -3411,7 +3411,7 @@ const drills = [
     setup: "Attacking half of 9v9 field, 50Wx40L area. Regular goal one end, three 8-yard dribbling gates other end. 5 Blue vs 5 Red. Rotate every interval.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "Key concept: make it compact AND stay compact. Ask: 'When is a good time to hassle the attacker?' Answer: when they have a bad first touch or receive facing their own goal. Compactness = close enough that a defender can help in 2–3 steps. Key words: Block the opening, Hassle, Work together, Help.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/u12-defending-opp-half-5v5-3-gates.svg",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U11-U12 Fall 2020 Week 8 (Spanish)"
@@ -3432,7 +3432,7 @@ const drills = [
     setup: "Defensive half of 9v9 field, 50Wx30L area. Two small goals on each end. 5 Blue vs 4 Red. Rotate every interval.",
     duration: "20 min (3 intervals: 5 min play, 1.5 min rest)",
     coachTip: "Ask: 'Who gets in between the ball and the goal?' Answer: closest defender. 'What does the closest defender do to force the ball away?' Answer: press on an angle. 'When do we double team?' Answer: when we outnumber the opponent. Key words: In front, Force away, Help, Double.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/u12-prevent-buildup-5v4-4-small-goals.svg",
     videoUrl: "",
     resourceUrl: "https://mayouthsoccer.org/coaches/session-plans/",
     source: "MA Youth Soccer U11-U12 Fall 2020 Week 9"
