@@ -1458,7 +1458,7 @@ const drills = [
     setup: "10x20 yard channel (cones). One ball per pair. Players start at opposite ends.",
     duration: "10 min (short rounds, rotate partners)",
     coachTip: "Attacker: use a change of pace or direction. Defender: stay on your feet, show the attacker to the sideline.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/1-vs-1-to-endlines.svg",
     videoUrl: "https://www.youtube.com/watch?v=epOq-E1gfP8",
     resourceUrl: "https://mojo.sport/coachs-corner/10-best-u8-soccer-drills/",
     source: "Mojo Sport U8/U10"
@@ -1479,7 +1479,7 @@ const drills = [
     setup: "Full small-sided field with goals. Two teams lined up on opposite sidelines, numbered. Coach at midfield with all balls.",
     duration: "15–20 min",
     coachTip: "Call numbers quickly and unpredictably. When a new player joins, they should immediately find their role. Great end-of-practice game.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/flying-numbers.svg",
     videoUrl: "https://www.youtube.com/watch?v=oNlHzG_mJnk",
     resourceUrl: "https://mojo.sport/coachs-corner/10-best-u10-soccer-drills/",
     source: "Mojo Sport U8+/U10/U12"
@@ -1542,7 +1542,7 @@ const drills = [
     setup: "Half field or 25x35 yard grid. Goal with GK. 2 defenders between midfield and box. 3 attackers start at midfield with ball.",
     duration: "15 min (rotate all players)",
     coachTip: "Get one defender to commit, then play around them. Defenders: one pressures ball, one covers the most dangerous attacker.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/3-vs-2-to-goal.svg",
     videoUrl: "https://www.youtube.com/watch?v=2qBZ9M30ye4",
     resourceUrl: "https://mojo.sport/coachs-corner/10-best-u10-soccer-drills/",
     source: "Mojo Sport U8/U10/U12"
@@ -1584,7 +1584,7 @@ const drills = [
     setup: "25x35 field, goals on end lines. Central 10x10 'hot box' zone marked. 4v4 or 5v5.",
     duration: "15 min",
     coachTip: "Ask: 'Is the middle open? If yes, go through it. If no, go around.'",
-    diagramUrl: "",
+    diagramUrl: "diagrams/hot-box.svg",
     videoUrl: "https://www.youtube.com/watch?v=uKc8JDKy9Gc",
     resourceUrl: "https://mojo.sport/coachs-corner/10-best-u12-soccer-drills/",
     source: "Mojo Sport U10/U12"
@@ -1626,7 +1626,7 @@ const drills = [
     setup: "Full small-sided field with goals. 5v5 or 6v6. Field divided into thirds — bonus points for winning ball in attacking third.",
     duration: "15 min",
     coachTip: "Make the bonus points visible — track them out loud. Celebrate winning the ball high up the field even if they don't score.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/liverpool.svg",
     videoUrl: "https://www.youtube.com/watch?v=w2zdjef-n_4",
     resourceUrl: "https://mojo.sport/coachs-corner/10-best-u12-soccer-drills/",
     source: "Mojo Sport U12"
