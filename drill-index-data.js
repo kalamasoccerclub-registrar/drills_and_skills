@@ -2409,7 +2409,7 @@ const drills = [
     setup: "35x45 field with goals. Equal teams. Coach on sideline with balls. Normal SSG but with coach freeze-and-question moments.",
     duration: "15 min",
     coachTip: "The value is in the freeze moments. Stop play and ask: 'You just won the ball — where should you go? Who should run?' Then play on and see if they apply it.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/up-and-down.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2430,7 +2430,7 @@ const drills = [
     setup: "Small-sided field with one full-size goal (or two small goals). GK in goal. Two equal teams numbered on the sideline. Coach with supply of balls.",
     duration: "15 min",
     coachTip: "Call numbers unpredictably — that's the whole point. Good for smaller groups or when you want to focus on individual 1v1 battles plus goalkeeper reactions.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/magic-number.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2472,7 +2472,7 @@ const drills = [
     setup: "Half field with one full-size goal and GK. Coned shooting zone 20–25 yards from goal. Attackers and bodyguards paired up. Coach feeds balls to attackers.",
     duration: "12 min (rotate roles every 4 min)",
     coachTip: "Bodyguards: stay goal-side of your attacker, not ball-side. Your job is to block the shot, not win the ball. Attackers: change direction quickly — your bodyguard has to react to you.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/bodyguards.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games/bodyguards/",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2493,7 +2493,7 @@ const drills = [
     setup: "Half field with one goal. One team attacks (dribbling/shooting); one team defends (arrests). Coach feeds balls from midfield.",
     duration: "12 min (rotate attack/defense every 4 min)",
     coachTip: "Attackers: keep moving — a stationary player gets arrested. Rescuing a teammate is a real skill (timing the run to avoid getting arrested yourself).",
-    diagramUrl: "",
+    diagramUrl: "diagrams/under-arrest.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2619,7 +2619,7 @@ const drills = [
     setup: "Half field with one full-size goal. Defenders start facing the coach. Attackers start behind the defenders. Coach plays ball over the top. Rotate roles after each rep.",
     duration: "12 min",
     coachTip: "First step is everything — turn on the first touch of the ball landing. Don't watch the ball in the air; watch the attacker's run. Get goal-side first, then worry about the ball.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/its-behind-you.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
