@@ -2157,7 +2157,7 @@ const drills = [
     setup: "30x25 yard grid. Equal teams. One team in possession, one defending. Coach with spare balls.",
     duration: "12 min (rotate every 3 min)",
     coachTip: "Progress from interceptions-only to full pressure. Ask players: 'Where is the monkey? Where is the space?' The pass goes AWAY from the defender, not toward them.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/dont-feed-the-monkeys.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2178,7 +2178,7 @@ const drills = [
     setup: "40x30 yard area divided in half. Equal teams. Goals or end zones for scoring. Coach with spare balls.",
     duration: "12 min",
     coachTip: "The passing before the forward ball is as important as the forward ball itself. Defenders: don't wait — close fast and cut the passing lane.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/over-the-border.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games/over-the-border",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2241,7 +2241,7 @@ const drills = [
     setup: "Small 10x10 yard grids. Groups of 3: 2 attackers, 1 defender. Multiple grids running simultaneously. Timer visible to players.",
     duration: "12 min (rapid rotations every 10–15 sec defending)",
     coachTip: "Defender: get close — don't defend from 5 yards. Angle your approach to cut off the easier pass option, then commit to the tackle when the attacker takes a heavy touch.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/pin-it-to-win-it.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games/pin-it-to-win-it",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2283,7 +2283,7 @@ const drills = [
     setup: "40x30 yard area. 6 cone gates (~2 yards wide) at corners and midpoints of each long side. Equal teams. Coach with spare balls.",
     duration: "15 min (first to 8 points wins; reset and replay)",
     coachTip: "Players need to use ALL 6 pockets — not just the ones in front of them. Ask: 'Which pocket is open right now?'",
-    diagramUrl: "",
+    diagramUrl: "diagrams/pool-table.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games/pool-table",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2388,7 +2388,7 @@ const drills = [
     setup: "Narrow field ~20 yards wide x 35 yards long with goals on each end line. Equal teams. No wide channels — all play through the central tunnel.",
     duration: "12 min",
     coachTip: "The narrowness is the whole point — don't widen the field. Ask players after: 'What was harder than a normal field? What had to change?'",
-    diagramUrl: "",
+    diagramUrl: "diagrams/tunnel-vision.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games/tunnel-vision/",
     source: "Soccer Coach Weekly — Keith Boanas"
