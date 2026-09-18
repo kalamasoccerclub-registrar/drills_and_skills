@@ -1882,7 +1882,7 @@ const drills = [
     setup: "45x30 yard area divided into 3 equal 15-yard zones. Two teams in outer zones, one defending team in middle. Coach with supply of balls on side.",
     duration: "12 min (2 rounds of 3 min defending + rotations)",
     coachTip: "Defenders: stay compact and read where the pass is going before it's kicked. Attackers: move to create passing angles in the outer zones before releasing the ball.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/behind-enemy-lines.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games/behind-enemy-lines1",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -1966,7 +1966,7 @@ const drills = [
     setup: "Goal on one end, coned channel (alley) leading to it. Two teams. Attackers queue to attack; defenders rotate through the alley. Coach feeds balls to attackers.",
     duration: "12 min",
     coachTip: "Defenders: delay before making a move — don't rush in. Work with your teammate to press and angle the attacker toward the sideline.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/tin-pan-alley.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games/tin-pan-alley",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2050,7 +2050,7 @@ const drills = [
     setup: "30x20 yard area. Flag or cone in the center. 4 gates (pairs of cones) on the perimeter. 3 defenders inside; 3 attacking teams of 3 rotate in from outside.",
     duration: "12 min (rotate defenders every 3 min)",
     coachTip: "Defenders: you can't guard all four gates — read where the ball is and where attackers are setting up. Attackers: fake to one gate, then go through another.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/the-alamo.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games/the-alamo/",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2071,7 +2071,7 @@ const drills = [
     setup: "40x30 yard grid. 5 small cone circles (pots, ~1 yard across) scattered inside. Defenders cannot run through or step over pots. Equal teams.",
     duration: "10 min (all players get an attacking turn)",
     coachTip: "Attackers: use disguise and change of pace to get past the defender before driving to an open pot. Defenders: tag, don't tackle — stay on your feet and between the attacker and the open pots.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/powerball.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games/powerball",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -2092,7 +2092,7 @@ const drills = [
     setup: "Full small-sided field with goals. Central 10-yard swamp zone marked with cones between the penalty areas. 5v5 or 6v6. GKs on their lines.",
     duration: "15 min",
     coachTip: "Teams that just kick it long quickly realize it doesn't work. Ask: 'Who can we play into the swamp?' If the middle is blocked, keep possession wide and wait.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/the-swamp.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games/the-swamp",
     source: "Soccer Coach Weekly — Keith Boanas"
