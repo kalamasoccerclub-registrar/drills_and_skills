@@ -1647,7 +1647,7 @@ const drills = [
     setup: "Start at 30x40 field with goals. Every 4 min, move each sideline cone 2–3 yards inward. 4v4 or 5v5.",
     duration: "15 min (3 shrinking phases)",
     coachTip: "After each shrink, pause and ask: 'What changed? What do you need to do differently now?'",
-    diagramUrl: "",
+    diagramUrl: "diagrams/shrinking-field.svg",
     videoUrl: "https://www.youtube.com/watch?v=th6bXhklwww",
     resourceUrl: "https://mojo.sport/coachs-corner/10-best-u12-soccer-drills/",
     source: "Mojo Sport U12"
@@ -1775,7 +1775,7 @@ const drills = [
     setup: "10x15 yard channel. 1v1 pairs, both with a ball. Multiple channels if group is large.",
     duration: "10 min (3–4 rounds per pairing, then swap opponents)",
     coachTip: "Body between the defender and the ball when shielding. Use sole of foot to drag the ball out of danger.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/gladiators.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -1796,7 +1796,7 @@ const drills = [
     setup: "10x20 yard grid. One attacker with ball, one (or two) defenders. Rotate roles after 3 attempts.",
     duration: "12 min",
     coachTip: "Disguise is the key — speed up to commit the defender, then cut hard.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/pizza-party.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -1817,7 +1817,7 @@ const drills = [
     setup: "30x20 yard grid with one goal and GK. Rotate attackers and defenders after each round.",
     duration: "15 min (progress through 1v1 → 2v1 → unit defending)",
     coachTip: "1v1: show the attacker to their weaker side, delay until help arrives. 2v1: one defender pressures ball, second covers the goal.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/no-escape.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
@@ -1838,7 +1838,7 @@ const drills = [
     setup: "20x25 yard grid. Two target zones on opposite end lines. 3 attackers, 3 defenders. Coach feeds ball to attackers.",
     duration: "12 min (rotate attack/defense every 4 min)",
     coachTip: "Defenders: read where the ball is going, don't just react to where it is. Position in the passing lane, not behind the attacker.",
-    diagramUrl: "",
+    diagramUrl: "diagrams/interceptors.svg",
     videoUrl: "",
     resourceUrl: "//www.soccercoachweekly.net/drills-and-games/fun-soccer-games",
     source: "Soccer Coach Weekly — Keith Boanas"
